@@ -3398,3 +3398,7 @@ let galleryTop = new Swiper('.gallery-top', {
   //   maxRatio: 2,
   // },
 });
+$('[data-fancybox="gallery"]').fancybox({
+  hash: true,
+  backFocus: false, // item index on closing equal starting index
+});
