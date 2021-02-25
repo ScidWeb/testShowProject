@@ -3372,7 +3372,7 @@ let galleryThumbs = new Swiper('.gallery-thumbs', {
       spaceBetween: 15,
     },
     720: {
-      slidesPerView: 5,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     540: {
