@@ -3358,6 +3358,7 @@ let galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 15,
   slidesPerView: 3,
   centerInsufficientSlides: true,
+  watchOverflow: true,
 
   navigation: {
     nextEl: '.swiper-button-next.gallery__button_next',
@@ -3384,6 +3385,7 @@ let galleryThumbs = new Swiper('.gallery-thumbs', {
 
 let galleryTop = new Swiper('.gallery-top', {
   centeredSlides: true,
+  watchOverflow: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
