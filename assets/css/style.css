@@ -559,7 +559,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
     cursor: pointer;
 }
 
@@ -773,7 +773,7 @@ p {
 }
 
 .card-detail-shops__item:hover {
-    background-color: #eee;
+    background-color: #fcfcfc;
 }
 
 .card-detail-shops__wrapper {
@@ -868,7 +868,7 @@ p {
 }
 
 .accordion-file:hover {
-    background-color: #fcfaf9;
+    background-color: #fcfcfc;
 }
 
 .accordion-file__image {
@@ -1047,7 +1047,7 @@ p {
     align-items: center;
     padding: 5px;
     box-sizing: border-box;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #f5f5f5;
     cursor: pointer;
 }
 
