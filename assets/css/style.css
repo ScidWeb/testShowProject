@@ -765,10 +765,15 @@ p {
     margin: 0 20px 10px 0;
     border: 1px solid #c4c4c4;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .card-detail-shops__item:last-child {
     margin-right: 0;
+}
+
+.card-detail-shops__item:hover {
+    background-color: #eee;
 }
 
 .card-detail-shops__wrapper {
@@ -859,6 +864,11 @@ p {
     padding: 0 30px;
     opacity: 0;
     visibility: hidden;
+    cursor: pointer;
+}
+
+.accordion-file:hover {
+    background-color: #fcfaf9;
 }
 
 .accordion-file__image {
@@ -1038,6 +1048,7 @@ p {
     padding: 5px;
     box-sizing: border-box;
     border: 1px solid #f0f0f0;
+    cursor: pointer;
 }
 
 .card-detail-gallery__thumbs-slide img {
