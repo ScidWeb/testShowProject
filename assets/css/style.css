@@ -34,7 +34,7 @@ ol[class] {
 }
 
 a {
-    color: #212121;
+    color: #555555;
     text-decoration: none;
 }
 
@@ -642,7 +642,7 @@ p {
 .card-detail__description {
     padding-top: 30px;
     margin-bottom: 40px;
-    color: #555555;
+    color: #777777;
 }
 
 @media screen and (max-width: 960px) {
@@ -719,7 +719,7 @@ p {
     color: #555555;
 }
 
-.card-detail-extra__link_description {
+.card-detail-extra__secondary-text {
     font-weight: 400;
     color: #777777;
 }
@@ -740,10 +740,6 @@ p {
     min-width: 65px;
     margin: 0 30px 0 0;
     font-weight: 600;
-    color: #555555;
-}
-
-.card-detail-shops__text p {
     color: #555555;
 }
 
