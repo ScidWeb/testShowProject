@@ -394,7 +394,7 @@ p {
   .card-detail-features h4,
   .card-detail-features h5,
   .card-detail-features h6 {
-    color: #000000;
+    color: #555555;
     font-weight: 700;
 }
 
@@ -429,9 +429,9 @@ p {
 
 .card-detail-features-subtitle {
     font-size: 23px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.4;
-    color: #000000;
+    color: #777777;
 }
 
 @media screen and (max-width: 960px) {
@@ -833,7 +833,7 @@ p {
 
 .accordion-table__wrapper {
     max-height: 0;
-    padding: 0;
+    padding: 0 20px;
     opacity: 0;
     visibility: hidden;
 }
@@ -852,9 +852,10 @@ p {
 
 .accordion-file {
     max-height: 0;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0;
+    padding: 0 20px;
     opacity: 0;
     visibility: hidden;
 }
@@ -981,7 +982,7 @@ p {
 }
 
 .gallery-thumbs {
-    width: 80%;
+    width: 85%;
     height: 120px;
 }
 
@@ -1027,6 +1028,7 @@ p {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    box-sizing: border-box;
     border: 1px solid #f0f0f0;
 }
 
