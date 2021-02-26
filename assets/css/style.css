@@ -965,6 +965,13 @@ p {
     }
 }
 
+@media screen and (max-width: 420px) {
+    .gallery-detail-gallery__image {
+        width: 280px;
+        height: 280px;
+    }
+}
+
 .gallery-detail-gallery__icon {
     position: absolute;
     bottom: 20px;
@@ -1039,4 +1046,11 @@ p {
     height: 88px;
     -o-object-fit: contain;
     object-fit: contain;
+}
+
+@media screen and (max-width: 420px) {
+    .card-detail-gallery__thumbs-slide img {
+        width: 60px;
+        height: 60px;
+    }
 }
