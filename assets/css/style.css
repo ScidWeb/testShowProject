@@ -112,6 +112,7 @@ button::-moz-focus-inner {
 p {
     font-size: 14px;
     color: #777777;
+    line-height: 24px;
 }
 
 .h1 {
@@ -787,14 +788,14 @@ p {
 
 .card-detail-accordion__item.active .accordion-table__wrapper {
     max-height: 2000px;
-    padding: 20px;
+    padding: 10px 30px;
     opacity: 1;
     visibility: visible;
 }
 
 .card-detail-accordion__item.active .accordion-file {
     max-height: 2000px;
-    padding: 20px;
+    padding: 10px 30px;
     opacity: 1;
     visibility: visible;
 }
@@ -833,13 +834,14 @@ p {
 
 .accordion-table__wrapper {
     max-height: 0;
-    padding: 0 20px;
+    padding: 0 30px;
     opacity: 0;
     visibility: hidden;
 }
 
 .accordion-table {
     width: 100%;
+    border-spacing: 0 5px;
 }
 
 .accordion-table__cell {
@@ -855,7 +857,7 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
     opacity: 0;
     visibility: hidden;
 }
