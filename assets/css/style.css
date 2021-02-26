@@ -387,7 +387,7 @@ p {
 }
 
 .card-detail-features {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .card-detail-features h2,
@@ -429,9 +429,8 @@ p {
 }
 
 .card-detail-features-subtitle {
-    font-size: 23px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.4;
     color: #777777;
 }
 
@@ -478,7 +477,7 @@ p {
 
 .card-detail-features_left .card-detail-features__text {
     width: 50%;
-    padding-right: 70px;
+    padding-right: 30px;
 }
 
 .card-detail-features_left .card-detail-features__image {
@@ -510,7 +509,7 @@ p {
 
 .card-detail-features_right .card-detail-features__text {
     width: 50%;
-    padding-left: 70px;
+    padding-left: 60px;
 }
 
 .card-detail-features_right .card-detail-features__image {
@@ -741,6 +740,10 @@ p {
     min-width: 65px;
     margin: 0 30px 0 0;
     font-weight: 600;
+    color: #555555;
+}
+
+.card-detail-shops__text p {
     color: #555555;
 }
 
