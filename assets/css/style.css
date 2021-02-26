@@ -955,7 +955,7 @@ p {
     height: 480px;
     -o-object-fit: contain;
     object-fit: contain;
-    cursor: zoom-in;
+    cursor: url("/assets/img/card-detail/icon-zoom.svg"), url("/assets/img/card-detail/icon-zoom.png"), zoom-in;
 }
 
 @media screen and (max-width: 768px) {
