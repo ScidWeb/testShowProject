@@ -3409,17 +3409,19 @@ $('[data-fancybox="gallery"]').fancybox({
   backFocus: false, // item index on closing equal starting index
 });
 $(document).ready(function () {
-  const $title = $('#cardDetailTitle');
-  const $information = $('#cardDetailInformation');
+  const $title = $('.card-detail-title');
+  const $information = $('.card-detail__information');
 
-  const $galleryContainer = $('#galleryContainer');
-  const $galleryWrapper = $('#galleryWrapper');
-  const galleryTop = $('#galleryTop');
-  const galleryThumbs = $('#galleryThumbs');
+  const $galleryContainer = $('.card-detail-gallery');
+  const $galleryWrapper = $('.gallery__wrapper');
+  const galleryTop = $('.gallery__container');
+  const galleryThumbs = $('.gallery-thumbs-container');
 
   let wrapperStartHeight = setStartHeight();
 
   const BREAKPOINT = 768;
+
+  checkScroll();
 
   $(window).on('scroll', function () {
     if ($(window).width() <= BREAKPOINT) {
@@ -3443,7 +3445,7 @@ $(document).ready(function () {
 
   $('.accordion__transition').on(
     'transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd',
-    function (event) {
+    function () {
       $(window).trigger('resize');
     }
   );
