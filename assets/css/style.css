@@ -98,6 +98,7 @@ button::-moz-focus-inner {
     width: 100%;
     max-width: 1430px;
     margin: 0 auto;
+    padding: 10px;
     color: #777777;
     font-weight: 400;
     font-size: 14px;
@@ -629,6 +630,7 @@ p {
 @media screen and (max-width: 768px) {
     .card-detail__content {
         grid-template-areas: 'title' 'gallery' 'information';
+        grid-template-rows: auto;
         grid-template-columns: 100%;
     }
 }
