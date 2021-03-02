@@ -3345,13 +3345,17 @@ $(document).ready(function () {
 
     $itemIsActive = $item.hasClass('active');
 
-    $items.each(function (i, elem) {
-      $(elem).removeClass('active');
-    });
+    $item.removeClass('active');
+
+    // $items.each(function (i, elem) {
+    //   $(elem).removeClass('active');
+    // });
 
     if (!$itemIsActive) {
       $item.addClass('active');
     }
+
+    $(window).trigger('resize');
   });
 });
 let galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -3403,4 +3407,84 @@ let galleryTop = new Swiper('.gallery-top', {
 $('[data-fancybox="gallery"]').fancybox({
   hash: true,
   backFocus: false, // item index on closing equal starting index
+});
+$(document).ready(function () {
+  const $title = $('#cardDetailTitle');
+  const $information = $('#cardDetailInformation');
+
+  const $galleryContainer = $('#galleryContainer');
+  const $galleryWrapper = $('#galleryWrapper');
+  const galleryTop = $('#galleryTop');
+  const galleryThumbs = $('#galleryThumbs');
+
+  let wrapperStartHeight = setStartHeight();
+
+  const BREAKPOINT = 768;
+
+  $(window).on('scroll', function () {
+    if ($(window).width() <= BREAKPOINT) {
+      $galleryWrapper.removeAttr('style');
+      return;
+    }
+
+    checkScroll();
+  });
+
+  $(window).on('resize', function () {
+    if ($(window).width() <= BREAKPOINT) {
+      $galleryWrapper.removeAttr('style');
+      return;
+    }
+
+    wrapperStartHeight = setStartHeight();
+
+    checkScroll();
+  });
+
+  $('.accordion__transition').on(
+    'transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd',
+    function (event) {
+      $(window).trigger('resize');
+    }
+  );
+
+  function checkScroll() {
+    if (!getWrapperHeight()) {
+      $galleryWrapper.height(setStartHeight());
+      return;
+    }
+
+    const siblingHeight =
+      $title.outerHeight(true) + $information.outerHeight(true);
+
+    const mainHeight =
+      wrapperStartHeight > siblingHeight ? wrapperStartHeight : siblingHeight;
+
+    $galleryWrapper.css({
+      height: getCheckedWrapperHeight(mainHeight),
+      maxHeight: mainHeight,
+    });
+  }
+
+  function getWrapperHeight() {
+    const touchScroll = $(window).scrollTop() - $galleryContainer.offset().top;
+
+    if ($(window).scrollTop() > $galleryWrapper.offset().top) {
+      return wrapperStartHeight + touchScroll;
+    } else {
+      return false;
+    }
+  }
+
+  function setStartHeight() {
+    return galleryTop.outerHeight(true) + galleryThumbs.outerHeight(true);
+  }
+
+  function getCheckedWrapperHeight(mainHeight) {
+    if (getWrapperHeight() >= mainHeight) {
+      return mainHeight;
+    } else {
+      return getWrapperHeight();
+    }
+  }
 });
