@@ -106,23 +106,13 @@ button::-moz-focus-inner {
     line-height: 21.09px;
 }
 
-.card-detail {
-    display: flex;
-    flex-direction: column;
-}
-
-.card-detail__secondary-text {
-    color: #777777;
-    font-weight: 400;
-}
-
 p {
     color: #777777;
     font-size: 14px;
     line-height: 24px;
 }
 
-.h1 {
+h1 {
     color: #555555;
     font-weight: 600;
     font-size: 28px;
@@ -130,12 +120,12 @@ p {
 }
 
 @media screen and (max-width: 540px) {
-    .h1 {
+    h1 {
         font-size: 25px;
     }
 }
 
-.h2 {
+h2 {
     color: #555555;
     font-weight: 600;
     font-size: 25px;
@@ -143,7 +133,7 @@ p {
 }
 
 @media screen and (max-width: 540px) {
-    .h2 {
+    h2 {
         font-size: 23px;
     }
 }
@@ -438,7 +428,8 @@ p {
 
 .card-detail-features__title {
     margin: 0 0 40px;
-    font-size: 35px;
+    font-size: 36px;
+    line-height: 36px;
 }
 
 .card-detail-features__description {
@@ -555,7 +546,7 @@ p {
     border-bottom: 1px solid #c4c4c4;
 }
 
-/* blocks */
+/* common blocks */
 /* accordion common */
 .accordion__item.active .accordion__header::after {
     font-size: 14px;
@@ -578,13 +569,14 @@ p {
 }
 
 .accordion__transition {
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 .gallery__transition {
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
+/* blocks */
 /* main */
 .card-detail {
     display: flex;
@@ -625,11 +617,19 @@ p {
     }
 }
 
+.card-detail__secondary-text {
+    color: #777777;
+    font-weight: 400;
+}
+
 .card-detail-title {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     margin: 0 0 30px 60px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
 }
 
 @media screen and (max-width: 768px) {
@@ -661,6 +661,7 @@ p {
 .card-detail__description {
     margin-bottom: 40px;
     color: #777777;
+    line-height: 24px;
 }
 
 @media screen and (max-width: 960px) {
