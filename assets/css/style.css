@@ -899,7 +899,7 @@ h2 {
 .card-detail {
     display: grid;
     grid-template-areas: 'gallery title' 'gallery information';
-    grid-template-rows: auto 100%;
+    grid-template-rows: auto;
     grid-template-columns: minmax(230px, 630px) auto;
     color: #777777;
     font-weight: 400;
@@ -919,7 +919,7 @@ h2 {
 .card-detail__gallery {
     position: relative;
     grid-area: gallery;
-    height: calc(100% - 90px);
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
