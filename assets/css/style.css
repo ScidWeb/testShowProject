@@ -613,7 +613,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-@media screen and (max-size: 540px) {
+@media screen and (max-width: 540px) {
     .accordion__item {
         margin-bottom: 5px;
     }
@@ -630,20 +630,20 @@ h2 {
     opacity: 1;
 }
 
-@media screen and (max-size: 960px) {
+@media screen and (max-width: 960px) {
     .accordion__item.active .accordion__table {
         padding: 10px 20px 0;
     }
 }
 
-@media screen and (max-size: 540px) {
+@media screen and (max-width: 540px) {
     .accordion__item.active .accordion__table {
         padding: 5px 0 0;
         font-size: 13px;
     }
 }
 
-@media screen and (max-size: 420px) {
+@media screen and (max-width: 420px) {
     .accordion__item.active .accordion__table {
         font-size: 12px;
     }
@@ -656,13 +656,13 @@ h2 {
     opacity: 1;
 }
 
-@media screen and (max-size: 960px) {
+@media screen and (max-width: 960px) {
     .accordion__item.active .accordion-file {
         padding: 10px 20px 0;
     }
 }
 
-@media screen and (max-size: 540px) {
+@media screen and (max-width: 540px) {
     .accordion__item.active .accordion-file {
         padding: 5px 0 0;
     }
