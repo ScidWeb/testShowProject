@@ -3333,15 +3333,15 @@
   })(document, jQuery);
 /* accordion */
 $(document).ready(function () {
-  const $accordion = $('.card-detail-accordion');
-  const $items = $accordion.find('.card-detail-accordion__item');
-  const $headers = $accordion.find('.card-detail-accordion__header');
+  const $accordion = $('.accordion');
+  const $items = $accordion.find('.accordion__item');
+  const $headers = $accordion.find('.accordion__header');
 
   $headers.on('click', function (event) {
     event.preventDefault();
 
-    $item = $(event.target).closest('.card-detail-accordion__item');
-    $header = $(event.target).closest('.card-detail-accordion__header');
+    $item = $(event.target).closest('.accordion__item');
+    $header = $(event.target).closest('.accordion__header');
 
     $itemIsActive = $item.hasClass('active');
 
