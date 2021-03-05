@@ -997,14 +997,23 @@ h2 {
 /* card-table */
 .card-table {
     width: 100%;
-    border-spacing: 0 5px !important;
+    border-collapse: separate;
+  /* winia */
+    border-spacing: 0 7px !important;
+  /* --- */
 }
 
 .card-table__cell {
     min-width: 50%;
+    /* winia */
+    padding: 0 !important;
+    /* --- */
 }
 
 .card-table__cell_value {
+    /* winia */
+    padding: 0 !important;
+    /* --- */
     font-weight: 600;
 }
 
