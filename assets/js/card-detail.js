@@ -1,30 +1,3 @@
-/* accordion */
-$(document).ready(function () {
-  const $accordion = $('.accordion');
-  const $items = $accordion.find('.accordion__item');
-  const $headers = $accordion.find('.accordion__header');
-
-  $headers.on('click', function (event) {
-    event.preventDefault();
-
-    $item = $(event.target).closest('.accordion__item');
-    $header = $(event.target).closest('.accordion__header');
-
-    $itemIsActive = $item.hasClass('active');
-
-    $item.removeClass('active');
-
-    // $items.each(function (i, elem) {
-    //   $(elem).removeClass('active');
-    // });
-
-    if (!$itemIsActive) {
-      $item.addClass('active');
-    }
-
-    $(window).trigger('resize');
-  });
-});
 let galleryThumbs = new Swiper('.swiper-container_card-detail-gallery_thumbs', {
   spaceBetween: 15,
   slidesPerView: 3,
@@ -74,4 +47,31 @@ let galleryTop = new Swiper('.swiper-container_card-detail-gallery_top', {
 $('[data-fancybox="gallery"]').fancybox({
   hash: true,
   backFocus: false, // item index on closing equal starting index
+});
+/* accordion */
+$(document).ready(function () {
+  const $accordion = $('.accordion');
+  const $items = $accordion.find('.accordion__item');
+  const $headers = $accordion.find('.accordion__header');
+
+  $headers.on('click', function (event) {
+    event.preventDefault();
+
+    $item = $(event.target).closest('.accordion__item');
+    $header = $(event.target).closest('.accordion__header');
+
+    $itemIsActive = $item.hasClass('active');
+
+    $item.removeClass('active');
+
+    // $items.each(function (i, elem) {
+    //   $(elem).removeClass('active');
+    // });
+
+    if (!$itemIsActive) {
+      $item.addClass('active');
+    }
+
+    $(window).trigger('resize');
+  });
 });
