@@ -1,632 +1,364 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html amp lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="assets/css/style.min.css" rel="stylesheet" />
-    <link
-      href="assets/css/libs/fancybox/jquery.fancybox.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    
-    <script src="./assets/js/app.min.js" defer></script>
-    <title>HomePage</title>
+<title>ЭКСКЛЮЗИВНАЯ ХИМЧИСТКА ЕВРОСЕРВИС</title>
+<link rel="canonical" href="https://www.evrohimchistka.ru/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style amp-custom>
+  body{margin:0;color:#fff;font-weight:400;font-size:14px;font-family:Montserrat,sans-serif;line-height:21.09px}*,:after,:before{box-sizing:border-box}:active,:focus,a:active,a:focus{outline:none}ol[class],ul[class]{padding:0;list-style-type:none}a{color:#555;text-decoration:none}p{line-height:21.09px}a:not([class]){-webkit-text-decoration-skip:ink;text-decoration-skip-ink:auto}blockquote,dd,dl,figcaption,figure,h1,h2,h3,h4,h5,h6,li,ol[class],p,ul[class]{margin:0;font-weight:inherit;font-size:inherit}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}p{font-size:14px;line-height:1.5}h1,p{color:#fff}h1{font-weight:600;font-size:36px;line-height:1}@media screen and (max-width:590px){h1{font-size:25px}}
+  .main-page__carousel{width:100vw;height:calc(100vh - 80px);min-height:700px}@media screen and (max-width:1100px){.main-page__carousel{min-height:670px}}@media screen and (max-width:860px){.main-page__carousel{min-height:620px}}@media screen and (max-width:768px){.main-page__carousel{min-height:540px}}@media screen and (max-width:590px){.main-page__carousel{min-height:590px}}
+  .carousel__item{display:flex;flex-direction:column;max-width:970px;margin-top:30px;padding:0 10px}.carousel__header{position:relative;max-width:490px;margin-bottom:20px;margin-left:auto;text-transform:uppercase}.carousel__title{margin-bottom:30px;font-weight:800;font-size:53px}@media screen and (max-width:1100px){.carousel__title{font-size:36px}}@media screen and (max-width:590px){.carousel__title{font-size:30px}}.carousel__subtitle{padding:30px 0;color:#000;font-weight:500;font-size:23px;text-align:center;background-color:#fff}@media screen and (max-width:1100px){.carousel__subtitle{padding:20px 0;font-size:20px}}@media screen and (max-width:590px){.carousel__subtitle{font-size:17px}}.carousel__article{position:relative;max-width:506px;margin-bottom:20px;padding:20px 20px 30px;background-color:rgba(0,0,0,.75)}@media screen and (max-width:590px){.carousel__article{display:flex;flex-direction:column}}.carousel__preview{padding-bottom:45px;font-size:18px}@media screen and (max-width:1100px){.carousel__preview{font-size:14px}}.carousel__button{display:inline-block;margin-left:15px;padding:16px 72px;color:#fff;font-size:16px;line-height:1.6;text-transform:uppercase;background-color:#0097ff}@media screen and (max-width:590px){.carousel__button{margin:0 auto;padding:16px 50px}}.carousel__footer{position:relative;display:flex;justify-content:space-between;margin:auto 0 55px;font-weight:500;text-transform:uppercase}@media screen and (max-width:590px){.carousel__footer{flex-direction:column;text-align:center}}.carousel__text{display:flex;flex-direction:column;font-size:28px;line-height:1}@media screen and (max-width:1100px){.carousel__text{font-size:23px}}@media screen and (max-width:860px){.carousel__text{font-size:18px}}@media screen and (max-width:590px){.carousel__text{margin-bottom:10px}}@media screen and (max-width:420px){.carousel__text{font-size:15px}}.carousel__text-bottom{display:block;margin-left:auto;font-size:32px;text-transform:none}@media screen and (max-width:860px){.carousel__text-bottom{font-size:18px}}@media screen and (max-width:590px){.carousel__text-bottom{margin:0;font-size:26px}}@media screen and (max-width:420px){.carousel__text-bottom{font-size:18px}}.carousel amp-carousel>div{padding:80px;background:url(/assets/img/index/index_background_main.png) 50%/cover no-repeat}@media screen and (max-width:768px){.carousel amp-carousel>div{padding:72px 0 0}}.amp-carousel-button{margin:0;background-color:transparent}@media screen and (max-width:590px){.amp-carousel-button{position:fixed;top:550px;box-shadow:2px -2px 2px 1px rgba(34,60,80,.22)}}.amp-carousel-button:focus{border:0;border-top:3px solid #fff;border-right:3px solid #fff;outline:none}.amp-carousel-button-next{right:130px;background-image:none;border-top:3px solid #fff;border-right:3px solid #fff;outline:none;transform:rotate(45deg)}@media screen and (max-width:768px){.amp-carousel-button-next{right:30px}}.amp-carousel-button-prev{left:130px;background-image:none;border-top:3px solid #fff;border-right:3px solid #fff;outline:none;transform:rotate(-135deg)}@media screen and (max-width:768px){.amp-carousel-button-prev{left:30px}}
+  .main-menu{font-size:18px;text-transform:uppercase;background:rgba(2,33,66,.15)}.main-menu__container{padding:0 80px;background:transparent}@media screen and (max-width:768px){.main-menu__container{padding:0 10px}}.main-menu__burger{z-index:10;width:45px;height:31px}.main-menu__burger.close{width:29px}.main-menu-list{display:flex;align-items:center;justify-content:flex-end;height:72px;padding:0 80px}.main-menu-list__info{display:flex;align-items:center;justify-content:center;margin-right:-45px}@media screen and (max-width:860px){.main-menu-list__info{justify-content:flex-start}}.main-menu-list__left{width:100%}.main-menu-list__telephone{margin-right:10%;color:#fefefe;font-size:22px}@media screen and (max-width:1100px){.main-menu-list__telephone{font-size:14px}}@media screen and (max-width:590px){.main-menu-list__telephone{display:none}}@media screen and (max-width:860px){.main-menu-list__telephone_left{display:none}}.main-menu-list__telephone_right{margin-right:0}.main-menu-list__image{margin-right:10%}.main-menu-items ol{display:flex;flex-direction:column;justify-content:space-between;height:70%;margin:110px 0 0;text-align:center;line-height:2;list-style:none}amp-mega-menu .main-menu-items{height:calc(100vh - 80px);margin-top:28px;background-color:rgba(35,36,36,.99);background-image:url(/assets/img/index/index_background_menu.png);background-repeat:no-repeat;background-position:50%}
+  .burger{position:relative;width:100%;height:100%;outline:none;cursor:pointer}.burger__element{position:absolute;left:0;display:block;width:100%;height:5px;background:#fff;transform:rotate(0deg);opacity:1;transition:.2s ease-in-out}.burger__element:first-child{top:0;transform-origin:left center}.burger__element:nth-child(2){top:13px;transform-origin:left center}.burger__element:nth-child(3){top:26px;transform-origin:left center}.burger.close .burger__element:first-child{width:37px;transform:rotate(45deg)}.burger.close .burger__element:nth-child(2){width:0;opacity:0;transition:.1s}.burger.close .burger__element:nth-child(3){top:26px;width:37px;transform:rotate(-45deg)}
+</style>
+<style amp-boilerplate>
+  body {
+    -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+  }
+  @-webkit-keyframes -amp-start {
+    from {
+      visibility: hidden;
+    }
+    to {
+      visibility: visible;
+    }
+  }
+  @-moz-keyframes -amp-start {
+    from {
+      visibility: hidden;
+    }
+    to {
+      visibility: visible;
+    }
+  }
+  @-ms-keyframes -amp-start {
+    from {
+      visibility: hidden;
+    }
+    to {
+      visibility: visible;
+    }
+  }
+  @-o-keyframes -amp-start {
+    from {
+      visibility: hidden;
+    }
+    to {
+      visibility: visible;
+    }
+  }
+  @keyframes -amp-start {
+    from {
+      visibility: hidden;
+    }
+    to {
+      visibility: visible;
+    }
+  }</style
+><noscript
+  ><style amp-boilerplate>
+    body {
+      -webkit-animation: none;
+      -moz-animation: none;
+      -ms-animation: none;
+      animation: none;
+    }
+  </style></noscript
+>
+
+
+<link
+  rel="preconnect dns-prefetch"
+  href="https://fonts.gstatic.com/"
+  crossorigin
+/>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
+
+<script
+  async
+  custom-element="amp-mega-menu"
+  src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"
+></script>
+<script
+  async
+  custom-element="amp-carousel"
+  src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"
+></script>
+
   </head>
   <body>
-    
-    <!-- prettier-ignore -->
-    <div class="container-main">
-        <!-- card-detail-main -->
-        <div class="container-main__card-detail">
-          <div class="card-detail">
-            <div class="card-detail__gallery"><!-- gallery -->
-        
-        <div class="card-detail-gallery">
-          <div class="card-detail-gallery__wrapper">
-            <div class="card-detail-gallery__top">
-              <div class="swiper-container swiper-container_card-detail-gallery_top">
-                <div class="card-detail-gallery__label card-detail-gallery__label_left">
-                  Smart tv
-                </div>
-                <div
-                  class="card-detail-gallery__label card-detail-gallery__label_right"
-                >
-                  NEW
-                </div>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide swiper-slide_card-detail-gallery_slide">
-                    <a
-                      data-fancybox="gallery"
-                      href="https://via.placeholder.com/300.png/ccc/ffffff/O%20"
-                    >
-                      <img
-                        class="card-detail-gallery__image-top"
-                        src="https://via.placeholder.com/300.png/ccc/ffffff/O%20"
-                        alt
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide swiper-slide_card-detail-gallery_slide">
-                    <a
-                      data-fancybox="gallery"
-                      href="https://via.placeholder.com/900x900.png/ccc/ffffff/O%20"
-                    >
-                      <img
-                        class="card-detail-gallery__image-top"
-                        src="https://via.placeholder.com/900x900.png/ccc/ffffff/O%20"
-                        alt
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide swiper-slide_card-detail-gallery_slide">
-                    <a
-                      data-fancybox="gallery"
-                      href="https://www.youtube.com/watch?v=Kx4K_v0VCPY&feature=emb_title"
-                    >
-                      <iframe
-                        class="card-detail-gallery__iframe-top"
-                        src="https://www.youtube.com/embed/Kx4K_v0VCPY"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      ></iframe>
-                    </a>
-                  </div>
-                  <div class="swiper-slide swiper-slide_card-detail-gallery_slide">
-                    <a
-                      data-fancybox="gallery"
-                      href="https://via.placeholder.com/90x300.png/ccc/ffffff/O%20"
-                    >
-                      <img
-                        class="card-detail-gallery__image-top"
-                        src="https://via.placeholder.com/90x300.png/ccc/ffffff/O%20"
-                        alt
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide swiper-slide_card-detail-gallery_slide">
-                    <a
-                      data-fancybox="gallery"
-                      href="https://via.placeholder.com/2400x1500.png/ccc/ffffff/O%20"
-                    >
-                      <img
-                        class="card-detail-gallery__image-top"
-                        src="https://via.placeholder.com/2400x1500.png/ccc/ffffff/O%20"
-                        alt
-                      />
-                    </a>
-                  </div>
-                </div>
-        
-                <div class="swiper-button-prev card-detail-gallery__button"></div>
-                <div class="swiper-button-next card-detail-gallery__button"></div>
-              </div>
-            </div>
-            <div class="card-detail-gallery__thumbs">
-              <div
-                class="swiper-button-prev card-detail-gallery__button card-detail-gallery__button_thumbs card-detail-gallery__button_prev"
-              ></div>
-        
-              <div class="swiper-container swiper-container_card-detail-gallery_thumbs">
-                <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide swiper-slide_card-detail-gallery_slide-thumbs"
-                  >
-                    <img
-                      class="card-detail-gallery__image-thumbs"
-                      src="https://via.placeholder.com/300.png/ccc/ffffff/O%20"
-                      alt
-                    />
-                  </div>
-                  <div
-                    class="swiper-slide swiper-slide_card-detail-gallery_slide-thumbs"
-                  >
-                    <img
-                      class="card-detail-gallery__image-thumbs"
-                      src="https://via.placeholder.com/900x900.png/ccc/ffffff/O%20"
-                      alt
-                    />
-                  </div>
-                  <div
-                    class="swiper-slide swiper-slide_card-detail-gallery_slide-thumbs"
-                  >
-                    <iframe
-                      class="card-detail-gallery__iframe-thumbs"
-                      src="https://www.youtube.com/embed/Kx4K_v0VCPY"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <div
-                    class="swiper-slide swiper-slide_card-detail-gallery_slide-thumbs"
-                  >
-                    <img
-                      class="card-detail-gallery__image-thumbs"
-                      src="https://via.placeholder.com/90x300.png/ccc/ffffff/O%20"
-                      alt
-                    />
-                  </div>
-                  <div
-                    class="swiper-slide swiper-slide_card-detail-gallery_slide-thumbs"
-                  >
-                    <img
-                      class="card-detail-gallery__image-thumbs"
-                      src="https://via.placeholder.com/2400x1500.png/ccc/ffffff/O%20"
-                      alt
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-button-next card-detail-gallery__button card-detail-gallery__button_thumbs card-detail-gallery__button_next"
-              ></div>
+    <header class="header">
+      <div class="main-menu">
+  <amp-mega-menu layout="fixed-height" height="80">
+    <nav class="main-menu__container">
+      <ul class="main-menu-list">
+        <li class="main-menu-list__left">
+          <div class="main-menu-list__info">
+            <a
+              class="main-menu-list__telephone main-menu-list__telephone_left"
+              href="tel:+7 (495) 727-19-57"
+            >
+              +7 (495) 727-19-57
+            </a>
+            <amp-img
+              class="main-menu-list__image"
+              src="/assets/img/index/index_logo.png"
+              layout="fixed"
+              width="210"
+              height="55"
+              object-fit="contain"
+            ></amp-img>
+            <a
+              class="main-menu-list__telephone main-menu-list__telephone_right"
+              href="tel:+7 (495) 727-19-57"
+            >
+              +7 (495) 727-19-57
+            </a>
+          </div>
+        </li>
+
+        <li class="main-menu-list__right">
+          <div class="main-menu__burger" role="button" tabindex="1">
+            <div class="burger">
+              <span class="burger__element"></span>
+              <span class="burger__element"></span>
+              <span class="burger__element"></span>
             </div>
           </div>
-        </div>
-        </div>
-        
-            <div class="card-detail__title"><!-- title -->
-        
-        <h1 class="title">
-          Телевизор U43V895VTE Телевизор U43V895VTE Телевизор U43V895VTE
-        </h1>
-        </div>
-        
-            <div class="card-detail__information"><!-- information -->
-        
-        <div class="card-detail-info">
-          <div class="card-detail-info__description">
-            <div class="card-description">
-              Новый телевизор Daewoo Electronics в линейке Smart TV, работающий на
-              операционной системе Android 5.1, обладает расширенным функционалом –
-              теперь вы сможете получить доступ к глобальной сети и с легкостью
-              использовать различные приложения. Технология Miracast позволит без труда
-              подключить мобильное устройство к телевизору и выводить любимый контент на
-              большой экран. За счет технологии MGDI Plus Engine экран модели Ultra HD
-              телевизора U43V890VTE идеально исправляет возможные искажения картинки,
-              обладает цифровым снижением шума и улучшением цвета. Система DDX Sound
-              Process Engine позволит насладиться мощным и живым звучанием за счет
-              снижения шумов.
-            </div>
+          <div role="dialog" class="main-menu-items">
+            <ol>
+              <li>Услуги</li>
+              <li>Цены</li>
+              <li>Личный технолог</li>
+              <li>Вопрос-ответ</li>
+              <li>Экспертиза</li>
+              <li>Договор</li>
+              <li>Стандарты</li>
+              <li>Доверие</li>
+              <li>Контакты</li>
+              <li>Обратная связь</li>
+            </ol>
           </div>
-        
-          <div class="card-detail-info__benefits">
-            <div class="benefits">
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-        
-              <div class="benefits__item">
-                <img
-                  class="benefits__img"
-                  src="https://via.placeholder.com/60/ccc/fff.png"
-                  alt="information"
-                />
-              </div>
-            </div>
-          </div>
-        
-          <div class="card-detail-info__extra">
-            <div class="card-extra">
-              <div class="card-extra__description">В случае ошибки “RH-01“:</div>
-        
-              <a class="card-extra__link" href="#">
-                Скачать прошивку
-                <span class="card-extra__text"> (пароль к архиву: 123) </span>
-              </a>
-            </div>
-          </div>
-        
-          <div class="card-detail-info__shops">
-            <div class="card-shops">
-              <div class="card-shops__text">Купить в</div>
-        
-              <div class="card-shops__list">
-                <div
-                  class="card-shops__item"
-                  onclick="window.open('http://www.google.com', '_blank')"
-                >
-                  <div class="card-shops__wrapper">
-                    <img
-                      class="card-shops__img"
-                      src="https://i.ibb.co/9b7X3Kf/korporatsiya-tsentr-1.png"
-                      alt
-                    />
-                  </div>
-                </div>
-                <div
-                  class="card-shops__item"
-                  onclick="window.open('http://www.google.com', '_blank')"
-                >
-                  <div class="card-shops__wrapper">
-                    <img
-                      class="card-shops__img"
-                      src="https://i.ibb.co/PhTtfSF/mvideo-01-1.png"
-                      alt
-                    />
-                  </div>
-                </div>
-                <div
-                  class="card-shops__item"
-                  onclick="window.open('http://www.google.com', '_blank')"
-                >
-                  <div class="card-shops__wrapper">
-                    <img
-                      class="card-shops__img"
-                      src="https://via.placeholder.com/90x22/ccc/fff.png"
-                      alt
-                    />
-                  </div>
-                </div>
-                <div
-                  class="card-shops__item"
-                  onclick="window.open('http://www.google.com', '_blank')"
-                >
-                  <div class="card-shops__wrapper">
-                    <img
-                      class="card-shops__img"
-                      src="https://via.placeholder.com/130x22/ccc/fff.png"
-                      alt
-                    />
-                  </div>
-                </div>
-                <div
-                  class="card-shops__item"
-                  onclick="window.open('http://www.google.com', '_blank')"
-                >
-                  <div class="card-shops__wrapper">
-                    <img
-                      class="card-shops__img"
-                      src="https://via.placeholder.com/50x22/ccc/fff.png"
-                      alt
-                    />
-                  </div>
-                </div>
-                <div
-                  class="card-shops__item"
-                  onclick="window.open('http://www.google.com', '_blank')"
-                >
-                  <div class="card-shops__wrapper">
-                    <img
-                      class="card-shops__img"
-                      src="https://via.placeholder.com/60x22/ccc/fff.png"
-                      alt
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--_ accordion _-->
-          <div class="card-detail-info__accordion">
-            <div class="accordion">
-              <div class="accordion__item">
-                <div class="accordion__header">
-                  <div class="accordion__title">Характеристики</div>
-                </div>
-          
-                <div class="accordion__table">
-                  <table class="card-table">
-                    <tr class="card-table__row">
-                      <td class="card-table__cell">Диагональ</td>
-                      <td class="card-table__cell card-table__cell_value">43'</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Формат экрана</td>
-                      <td class="card-table__cell card-table__cell_value">16:9</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Разрешение</td>
-                      <td class="card-table__cell card-table__cell_value">3840X2160</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Разрешение</td>
-                      <td class="card-table__cell card-table__cell_value">4K Ultra HD</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Яркость</td>
-                      <td class="card-table__cell card-table__cell_value">240 кд/м2</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Угол обзора, вер.</td>
-                      <td class="card-table__cell card-table__cell_value">178°</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Угол обзора, гор</td>
-                      <td class="card-table__cell card-table__cell_value">178°</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Мощность звука</td>
-                      <td class="card-table__cell card-table__cell_value">8 Вт х 2</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Интерфейс HDMI</td>
-                      <td class="card-table__cell card-table__cell_value">3</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Интерфейс HDMI</td>
-                      <td class="card-table__cell card-table__cell_value">2.0 3</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Интерфейс USB</td>
-                      <td class="card-table__cell card-table__cell_value">2.0</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Интерфейс AV in</td>
-                      <td class="card-table__cell card-table__cell_value">1</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Интерфейс PC in</td>
-                      <td class="card-table__cell card-table__cell_value">1</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Технология оптимизации изображения</td>
-                      <td class="card-table__cell card-table__cell_value">MGDI+Engine</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Потребляемая мощность при работе</td>
-                      <td class="card-table__cell card-table__cell_value">85 Вт</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">
-                        Потребляемая мощность в режиме ожидания
-                      </td>
-                      <td class="card-table__cell card-table__cell_value">≤ 0,5 Вт</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Частота обновления (Гц)</td>
-                      <td class="card-table__cell card-table__cell_value">60</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Размер</td>
-                      <td class="card-table__cell card-table__cell_value">
-                        969x222x622 (мм)
-                      </td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Размер в упаковке</td>
-                      <td class="card-table__cell card-table__cell_value">
-                        1128x142x660 (мм)
-                      </td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Размер крепления</td>
-                      <td class="card-table__cell card-table__cell_value">200x100 мм</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Вес нетто</td>
-                      <td class="card-table__cell card-table__cell_value">8,0 кг</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Вес брутто</td>
-                      <td class="card-table__cell card-table__cell_value">10,8 кг</td>
-                    </tr>
-                    <tr class="card-table_row">
-                      <td class="card-table__cell">Страна производства</td>
-                      <td class="card-table__cell card-table__cell_value">
-                        Республика Беларусь
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-          
-              <div class="accordion__item">
-                <div class="accordion__header">
-                  <div class="accordion__title">Инструкция</div>
-                </div>
-          
-                <div class="accordion__file">
-                  <div
-                    class="accordion-file"
-                    onclick="window.open('http://www.google.com', '_blank')"
-                    ;
-                  >
-                    <div class="accordion-file__image"></div>
-                    <div class="accordion-file__description">
-                      Инструкция: 32" (81 см) Телевизор LED Daewoo U43V895VTE черный
-                      <span class="accordion-file__size"> (60 mb) </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-          </div>
-        </div>
-        <!-- features -->
-        <div class="container-main__features">
-          <!-- card detail features template center -->
-        
-        <div class="card-features card-features_center card-features_border-bottom">
-          <div class="card-features__text">
-            <h2 class="card-features__title">Революционная система охлаждения</h2>
-        
-            <div class="card-features__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae culpa
-              nostrum accusantium doloribus. Autem eum dolore illo excepturi eius ipsam
-              explicabo dignissimos quia nisi, et quidem molestiae? Rem, hic quidem.
-            </div>
-          </div>
-        
-          <div class="card-features__wrapper">
-            <img
-              class="card-features__image"
-              src="https://via.placeholder.com/2400x1500.png/ccc/ffffff/O%20"
-              alt
-            />
-          </div>
-        </div>
-         <!-- features template left -->
-        
-        <div class="card-features card-features_left card-features_border-bottom">
-          <div class="card-features__text">
-            <h2 class="card-features__title">Auto Mode</h2>
-        
-            <div class="card-features__description">
-              Auto modes operations in High / Mid Low according to the surrounding air
-              quality
-            </div>
-          </div>
-        
-          <div class="card-features__wrapper">
-            <img
-              class="card-features__image"
-              src="https://via.placeholder.com/2400x1500.png/ccc/ffffff/O%20"
-              alt
-            />
-          </div>
-        </div>
-         <!-- features template right -->
-        
-        <div class="card-features card-features_right">
-          <div class="card-features__text">
-            <h2 class="card-features__title">Turbo Mode</h2>
-        
-            <div class="card-features__description">
-              Turbo Mode operation affectively and quickly cleans air when the air
-              quality is patciularly bad
-            </div>
-          </div>
-        
-          <div class="card-detail-features__wrapper">
-            <img
-              class="card-features__image"
-              src="https://via.placeholder.com/2400x1500.png/ccc/ffffff/O%20"
-              alt
-            />
-          </div>
-        </div>
-        
-        </div>
-        <div class="card-features-small">
-        
-            <h2 class="card-features-small__name">Особенности</h2>
-        
-            <div class="card-features-small__item">
-                <div class="card-features-small__wrapper">
-                    <img class="card-features-small__image" src="https://via.placeholder.com/130x90.png/ccc/ffffff/O%20" alt="information"></img>
-                </div>
-                <div class="card-features-small__info">
-                    <div class="card-features-small__title">Smart-TV</div>
-                    <div class="card-features-small__text">Операционная система на базе Android 6.0 обеспечивает легкий доступ к глобальной сети, возможность скачивать полезные приложения и наслаждаться любимыми фильмами и играми на большом экране. Узнайте больше о Daewoo Smart TV.</div>
-                </div>
-            </div>
-        
-            <div class="card-features-small__item">
-                <div class="card-features-small__wrapper">
-                    <img class="card-features-small__image" src="https://via.placeholder.com/130x90.png/ccc/ffffff/O%20" alt="information"></img>
-                </div>
-                <div class="card-features-small__info">
-                    <div class="card-features-small__title">MGDI Plus Engine (Meta Genuine Digital Image)</div>
-                    <div class="card-features-small__text">Идеальное исправление возможных искажений, цифровое снижение шума, улучшение цвета.</div>
-                </div>
-            </div>
-        
-            <div class="card-features-small__item">
-                <div class="card-features-small__wrapper">
-                    <img class="card-features-small__image" src="https://via.placeholder.com/130x90.png/ccc/ffffff/O%20" alt="information"></img>
-                </div>
-                <div class="card-features-small__info">
-                    <div class="card-features-small__title">DDX Sound process Engine</div>
-                    <div class="card-features-small__text">Динамическое улучшение звука, снижение шумов.</div>
-                </div>
-            </div>
-        
-            <div class="card-features-small__item">
-                <div class="card-features-small__wrapper">
-                    <img class="card-features-small__image" src="https://via.placeholder.com/130x90.png/ccc/ffffff/O%20" alt="information"></img>
-                </div>
-                <div class="card-features-small__info">
-                    <div class="card-features-small__title">Насыщенный цвет</div>
-                    <div class="card-features-small__text">Профессиональное улучшение изображения, естественная цветопередача.</div>
-                </div>
-            </div>
-        </div></div>
-    
+        </li>
+      </ul>
+    </nav>
+  </amp-mega-menu>
+</div>
+
+    </header>
+    <main class="main-page">
+      <section class="main-page__carousel">
+        <div class="carousel">
+  <amp-carousel
+    layout="fill"
+    type="slides"
+    role="region"
+    aria-label="Basic carousel"
+  >
+    <div class="carousel__item">
+      <amp-img
+        src="/assets/img/index/index_1.png"
+        layout="fill"
+        object-fit="cover"
+      ></amp-img>
+
+      <div class="carousel__header">
+        <h1 class="carousel__title">Эксклюзивная химчистка</h1>
+        <p class="carousel__subtitle">Дорогих вам вещей</p>
+      </div>
+
+      <div class="carousel__article">
+        <p class="carousel__preview">
+          Мы стремимся к совершенству во всём, что делаем. Химчистка люкс.
+          Премиальный сервис взыскательным клиентам. Формула абсолютного
+          превосходства. Компания химчистки Москвы...
+        </p>
+        <a class="carousel__button">Подробнее</a>
+      </div>
+
+      <div class="carousel__footer">
+        <p class="carousel__text">
+          Высшее качество <span class="carousel__text-bottom">25 ЛЕТ</span>
+        </p>
+        <p class="carousel__text">
+          Индивидуально выполняем
+          <span class="carousel__text-bottom">более 40 видов услуг</span>
+        </p>
+      </div>
+    </div>
+    <div class="carousel__item">
+      <amp-img
+        src="/assets/img/index/index_2.png"
+        layout="fill"
+        object-fit="cover"
+      ></amp-img>
+
+      <div class="carousel__header">
+        <h1 class="carousel__title">Эксклюзивная химчистка одежды</h1>
+        <p class="carousel__subtitle">Luxury dry clean</p>
+      </div>
+
+      <div class="carousel__article">
+        <p class="carousel__preview">
+          Индивидуальная химчистка костюмов, платьев, пальто, пуховиков.
+          Работаем с любым видом тканей. Углеводородная чистка люкс
+          рекомендована брендами элитной...
+        </p>
+        <a class="carousel__button">Подробнее</a>
+      </div>
+
+      <div class="carousel__footer">
+        <p class="carousel__text">
+          Высокое качество
+          <span class="carousel__text-bottom">С 1996 ГОДА</span>
+        </p>
+        <p class="carousel__text">
+          Выполняем более
+          <span class="carousel__text-bottom">40 видов услуг</span>
+        </p>
+      </div>
+    </div>
+    <div class="carousel__item">
+      <amp-img
+        src="/assets/img/index/index_3.png"
+        layout="fill"
+        object-fit="cover"
+      ></amp-img>
+
+      <div class="carousel__header">
+        <h1 class="carousel__title">Эксклюзивная химчистка ковров</h1>
+        <p class="carousel__subtitle">Luxury dry clean</p>
+      </div>
+
+      <div class="carousel__article">
+        <p class="carousel__preview">
+          Индивидуальная углеводородная химчистка на фабрике в Москве, доставка.
+          Максимально деликатный, эффективный сухой метод чистки шерстяных,
+          шёлковых ковров. Услуга класса...
+        </p>
+        <a class="carousel__button">Подробнее</a>
+      </div>
+
+      <div class="carousel__footer">
+        <p class="carousel__text">
+          Высокое качество
+          <span class="carousel__text-bottom">С 1996 ГОДА</span>
+        </p>
+        <p class="carousel__text">
+          Выполняем более
+          <span class="carousel__text-bottom">40 видов услуг</span>
+        </p>
+      </div>
+    </div>
+    <div class="carousel__item">
+      <amp-img
+        src="/assets/img/index/index_4.png"
+        layout="fill"
+        object-fit="cover"
+      ></amp-img>
+
+      <div class="carousel__header">
+        <h1 class="carousel__title">Эксклюзивная химчистка штор</h1>
+        <p class="carousel__subtitle">Luxury dry clean</p>
+      </div>
+
+      <div class="carousel__article">
+        <p class="carousel__preview">
+          Индивидуальная углеводородная химчистка штор люкс на фабрике. Работаем
+          абсолютно с любыми видами штор, деликатными тканями (бархат, гобелен,
+          шелк, муар). Химчистка штор...
+        </p>
+        <a class="carousel__button">Подробнее</a>
+      </div>
+
+      <div class="carousel__footer">
+        <p class="carousel__text">
+          Высокое качество
+          <span class="carousel__text-bottom">С 1996 ГОДА</span>
+        </p>
+        <p class="carousel__text">
+          Выполняем более
+          <span class="carousel__text-bottom">40 видов услуг</span>
+        </p>
+      </div>
+    </div>
+    <div class="carousel__item">
+      <amp-img
+        src="/assets/img/index/index_5.png"
+        layout="fill"
+        object-fit="cover"
+      ></amp-img>
+
+      <div class="carousel__header">
+        <h1 class="carousel__title">Химчистка мягкой мебели</h1>
+        <p class="carousel__subtitle">Luxury dry clean</p>
+      </div>
+
+      <div class="carousel__article">
+        <p class="carousel__preview">
+          Индивидуальная химчистка мягкой мебели ведущих мировых производителей.
+          Класс услуги люкс. Химчистка диванов на дому, элитной мягкой мебели.
+          Деликатная чистка обивки всех...
+        </p>
+        <a class="carousel__button">Подробнее</a>
+      </div>
+
+      <div class="carousel__footer">
+        <p class="carousel__text">
+          Высокое качество
+          <span class="carousel__text-bottom">С 1996 ГОДА</span>
+        </p>
+        <p class="carousel__text">
+          Выполняем более
+          <span class="carousel__text-bottom">40 видов услуг</span>
+        </p>
+      </div>
+    </div>
+    <div class="carousel__item">
+      <amp-img
+        src="/assets/img/index/index_6.png"
+        layout="fill"
+        object-fit="cover"
+      ></amp-img>
+
+      <div class="carousel__header">
+        <h1 class="carousel__title">Эксклюзивная химчистка шуб и меха</h1>
+        <p class="carousel__subtitle">Luxury dry clean</p>
+      </div>
+
+      <div class="carousel__article">
+        <p class="carousel__preview">
+          Идеальная технология химчистки шуб. Особо бережная обработка в среде
+          углеводородных KWL-растворителей класса люкс. Предложение химчистки
+          норковых шуб в...
+        </p>
+        <a class="carousel__button">Подробнее</a>
+      </div>
+
+      <div class="carousel__footer">
+        <p class="carousel__text">
+          Высокое качество
+          <span class="carousel__text-bottom">С 1996 ГОДА</span>
+        </p>
+        <p class="carousel__text">
+          Выполняем более
+          <span class="carousel__text-bottom">40 видов услуг</span>
+        </p>
+      </div>
+    </div>
+  </amp-carousel>
+</div>
+
+      </section>
+    </main>
   </body>
 </html>
