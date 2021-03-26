@@ -579,28 +579,17 @@ button {
 
 /* variables */
 .feedback {
-    display: grid;
-    grid-template-areas: 'info form' 'confidentiality form';
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 50% 50%;
+    display: flex;
 }
 
 @media screen and (max-width: 1280px) {
     .feedback {
-        grid-template-areas: 'info' 'confidentiality' 'form';
-        grid-template-columns: 100%;
-    }
-}
-
-@media screen and (max-width: 590px) {
-    .feedback {
-        grid-template-areas: 'info' 'form' 'confidentiality';
+        flex-direction: column;
     }
 }
 
 .feedback__info {
-    grid-area: info;
-    margin-bottom: 60px;
+    flex-basis: 50%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -612,8 +601,6 @@ button {
 .feedback__confidentiality {
     display: flex;
     flex-direction: row;
-    grid-area: confidentiality;
-    align-items: flex-start;
 }
 
 @media screen and (max-width: 1280px) {
@@ -658,11 +645,23 @@ button {
     }
 }
 
+@media screen and (max-width: 590px) {
+    .feedback__checkbox {
+        margin-right: 10px;
+    }
+}
+
 .feedback__text {
     color: #a78460;
-    font-size: 14px;
-    line-height: 1.57;
+    font-size: 13px;
+    line-height: 1.154;
     letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 590px) {
+    .feedback__text {
+        font-size: 12px;
+    }
 }
 
 .feedback__link {
@@ -671,8 +670,8 @@ button {
 }
 
 .feedback__form {
-    grid-area: form;
-    margin-left: 15%;
+    flex-basis: 44%;
+    margin-left: auto;
     background-color: #ece5e0;
 }
 
@@ -714,6 +713,7 @@ button {
 .feedback__item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
 }
 
 .feedback__button {
@@ -740,20 +740,14 @@ button {
 
 .feedback__input {
     height: 40px;
-    margin-bottom: 25px;
     background-color: #ddcebc;
     border: 0;
-}
-
-.feedback__input:last-child {
-    margin-bottom: 40px;
 }
 
 .feedback__textarea {
     height: 40px;
     min-height: 40px;
     max-height: 300px;
-    margin-bottom: 40px;
     overflow: auto;
     background-color: #ddcebc;
     border: 0;
@@ -976,7 +970,7 @@ button {
     left: 6px;
     width: 100%;
     height: 100%;
-    background-image: url("./assets/img/feedback/checkbox_background.svg");
+    background-image: url("/../assets/img/feedback/checkbox_background.svg");
     background-repeat: no-repeat;
     background-position: center center;
     visibility: hidden;
