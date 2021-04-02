@@ -54,3 +54,7 @@
 .header__icon {
     margin-right: 18px;
 }
+
+.header_fixed {
+    margin: inherit;
+}

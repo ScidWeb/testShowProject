@@ -1,22 +1,20 @@
 function startModal() {
   let cacheNews = [];
 
+  const overlay = document.querySelector('.js-modal-overlay');
+  const overlayBackground = document.querySelector('.js-modal-overlay-background');
+  const overlayNumber = document.querySelector('.js-modal-number');
+  const overlayTitle = document.querySelector('.js-modal-title');
+  const overlayText = document.querySelector('.js-modal-text');
+  const overlayCloseContainers = document.querySelectorAll('.js-modal-overlay-close');
+  const buttonContainers = document.querySelectorAll('.js-item-modal-open');
+
   function toggleModal() {
-    const overlay = document.querySelector('.js-modal-overlay');
-    const overlayBackground = document.querySelector(
-      '.js-modal-overlay-background'
-    );
-    const overlayNumber = document.querySelector('.js-modal-number');
-    const overlayTitle = document.querySelector('.js-modal-title');
-    const overlayText = document.querySelector('.js-modal-text');
-    const overlayCloseContainers = document.querySelectorAll(
-      '.js-modal-overlay-close'
-    );
-    const buttonContainers = document.querySelectorAll('.js-item-modal-open');
+    let simpleBar;
 
     overlayCloseContainers.forEach((element) => {
       element.addEventListener('click', () => {
-        overlay.classList.remove('active');
+        closeModal();
       });
     });
 
@@ -24,19 +22,24 @@ function startModal() {
       button.addEventListener('click', async function (event) {
         event.preventDefault();
 
-        const buttonBackgroundColor = window.getComputedStyle(button)
-          .backgroundColor;
+        const buttonBackgroundColor = window.getComputedStyle(button).backgroundColor;
         overlayBackground.style.backgroundColor = buttonBackgroundColor;
 
         let newsId = button.getAttribute('data-modal-id');
 
         overlay.classList.add('active');
 
+        compensationScroll();
+        toggleScrollBody();
+
         const newsData = await getNewsData(newsId);
 
         overlayNumber.textContent = newsId;
         overlayTitle.textContent = newsData.title;
         overlayText.textContent = `${newsData.title} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`;
+
+        if (simpleBar) simpleBar.unMount();
+        simpleBar = new SimpleBar(overlayText);
       });
     });
   }
@@ -57,9 +60,7 @@ function startModal() {
       return news;
     }
 
-    let response = await fetch(
-      'https://my-json-server.typicode.com/typicode/demo/posts'
-    );
+    let response = await fetch('https://my-json-server.typicode.com/typicode/demo/posts');
 
     if (response.ok) {
       let json = await response.json();
@@ -81,7 +82,16 @@ function startModal() {
     }
   }
 
+  function closeModal() {
+    compensationScroll();
+    toggleScrollBody();
+
+    overlay.classList.remove('active');
+  }
+
   toggleModal();
+
+  addEventOnKeydown('Escape', closeModal);
 }
 
 startModal();

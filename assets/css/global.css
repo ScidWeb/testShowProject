@@ -155,12 +155,26 @@ button {
 
 @media screen and (max-width: 1280px) {
     .wrapper__header {
-        margin-bottom: -32px;
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+        justify-content: flex-end;
+        width: calc(100% - 140px);
+        margin: inherit;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .wrapper__header {
+        width: calc(100% - 100px);
     }
 }
 
 @media screen and (max-width: 590px) {
     .wrapper__header {
+        position: static;
+        display: block;
+        width: auto;
         margin-bottom: 25px;
     }
 }

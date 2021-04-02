@@ -156,12 +156,26 @@ button {
 
 @media screen and (max-width: 1280px) {
     .wrapper__header {
-        margin-bottom: -32px;
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+        justify-content: flex-end;
+        width: calc(100% - 140px);
+        margin: inherit;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .wrapper__header {
+        width: calc(100% - 100px);
     }
 }
 
 @media screen and (max-width: 590px) {
     .wrapper__header {
+        position: static;
+        display: block;
+        width: auto;
         margin-bottom: 25px;
     }
 }
@@ -575,6 +589,10 @@ button {
 
 .header__icon {
     margin-right: 18px;
+}
+
+.header_fixed {
+    margin: inherit;
 }
 
 /* variables */
@@ -1142,6 +1160,7 @@ button {
 @media screen and (max-width: 590px) {
     .modal-services {
         padding: 25px;
+        padding-bottom: 100px;
     }
 }
 
@@ -1217,6 +1236,10 @@ button {
     .modal-services__button {
         bottom: 22px;
     }
+}
+
+.simplebar-scrollbar::before {
+    background-color: #c4c4c4;
 }
 
 /* variables */

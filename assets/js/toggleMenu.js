@@ -1,6 +1,4 @@
 function toggleMenu() {
-  const body = document.querySelector('body');
-  const wrapper = document.querySelector('.wrapper');
   const burger = document.querySelector('.burger');
   const menuContent = document.querySelector('.main-menu__content');
 
@@ -8,18 +6,10 @@ function toggleMenu() {
     burger.classList.toggle('active');
     menuContent.classList.toggle('active');
 
-    if (!wrapper.hasAttribute('style')) {
-      wrapper.style.marginRight = `${getScrollWidth()}px`;
-    } else {
-      wrapper.removeAttribute('style');
-    }
+    compensationScroll();
 
-    body.classList.toggle('overflow-hidden');
+    toggleScrollBody();
   });
-}
-
-function getScrollWidth() {
-  return window.innerWidth - document.body.clientWidth;
 }
 
 toggleMenu();

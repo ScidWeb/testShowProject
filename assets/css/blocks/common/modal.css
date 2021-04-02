@@ -99,6 +99,7 @@
 @media screen and (max-width: 590px) {
     .modal-services {
         padding: 25px;
+        padding-bottom: 100px;
     }
 }
 
@@ -174,4 +175,8 @@
     .modal-services__button {
         bottom: 22px;
     }
+}
+
+.simplebar-scrollbar::before {
+    background-color: #c4c4c4;
 }
