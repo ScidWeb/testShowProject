@@ -121,7 +121,7 @@ button {
     position: relative;
     min-height: 100vh;
     padding: 50px 70px 25px;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #f0edeb;
 }
 
@@ -149,41 +149,45 @@ button {
     }
 }
 
+.wrapper_main {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
 .wrapper__header {
-    margin-bottom: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: inherit;
+    padding-bottom: 0;
 }
 
-@media screen and (max-width: 1280px) {
-    .wrapper__header {
-        position: fixed;
-        z-index: 1000;
-        display: flex;
-        justify-content: flex-end;
-        width: calc(100% - 140px);
-        margin: inherit;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .wrapper__header {
-        width: calc(100% - 100px);
-    }
-}
-
-@media screen and (max-width: 590px) {
-    .wrapper__header {
-        position: static;
-        display: block;
-        width: auto;
-        margin-bottom: 25px;
-    }
+.wrapper__header_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: inherit;
+    padding: inherit;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #f0edeb;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .wrapper__logo {
-    position: absolute;
-    top: 530px;
-    right: 10px;
-    transform: rotate(90deg);
+    position: fixed;
+    top: 50%;
+    right: 16px;
+    z-index: 1000;
+    margin-right: inherit;
+    transform: rotate(90deg) translateY(-50%);
 }
 
 @media screen and (max-width: 1620px) {
@@ -213,17 +217,33 @@ button {
 
 .wrapper__main {
     margin-bottom: 125px;
+    padding-top: 110px;
 }
 
 @media screen and (max-width: 1280px) {
     .wrapper__main {
         margin-bottom: 50px;
+        padding-top: 0;
     }
 }
 
 @media screen and (max-width: 590px) {
     .wrapper__main {
         margin-bottom: 40px;
+        padding-top: 49px;
+    }
+}
+
+.wrapper__main_index {
+    position: static;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 7.5%;
+}
+
+@media screen and (max-width: 1280px) {
+    .wrapper__main_index {
+        padding-bottom: 15px;
     }
 }
 

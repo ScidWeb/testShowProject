@@ -20,13 +20,14 @@
 <script src="./assets/js/libs/GSAP/ScrollTrigger.min.js"></script>
 <script src="./assets/js/libs/simplebar/simplebar.min.js"></script>
 <script src="./assets/js/helpers.min.js" defer></script>
+<script src="./assets/js/fixMenu.min.js" defer></script>
 <script src="./assets/js/toggleMenu.min.js" defer></script>
 <script src="./assets/js/servicesModal.js" defer></script>
 <script src="./assets/js/animationServices.min.js" defer></script>
 
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper js-wrapper-main">
       <div class="modal js-modal-overlay">
   <div class="modal__background js-modal-overlay-close"></div>
   <div class="modal__wrapper">
@@ -43,7 +44,7 @@
   </div>
 </div>
 
-      <header class="wrapper__header"><div class="header header_fixed">
+      <header class="wrapper__header js-header-fixed"><div class="header">
   <div class="header__logo">
     <div class="logo logo_header">Vasilisa</div>
   </div>
@@ -101,7 +102,7 @@
         <div class="logo">Vasilisa</div>
       </div>
       <main class="wrapper__main"><section class="services">
-  <div class="services__title">
+  <div class="services__title js-header-fixed-control">
     <div class="section-info">
       <h1 class="section-info__title">Услуги</h1>
       <h2 class="section-info__subtitle">Премиум <span class="section-info__dash">-</span> химчистка</h2>

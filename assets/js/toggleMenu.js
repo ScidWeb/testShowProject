@@ -6,9 +6,11 @@ function toggleMenu() {
     burger.classList.toggle('active');
     menuContent.classList.toggle('active');
 
-    compensationScroll();
+    compensationScrollWrapper();
 
     toggleScrollBody();
+
+    compensationScrollHeader();
   });
 }
 

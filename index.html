@@ -18,9 +18,109 @@
 
 <script src="./assets/js/helpers.min.js" defer></script>
 <script src="./assets/js/toggleMenu.min.js" defer></script>
+<script src="./assets/js/carousel.min.js" defer></script>
 
   </head>
   <body>
-    
+    <div class="wrapper wrapper_main js-wrapper-main">
+      <div class="modal js-modal-overlay">
+  <div class="modal__background js-modal-overlay-close"></div>
+  <div class="modal__wrapper">
+    <div class="modal__services">
+      <div class="modal-services js-modal-overlay-background">
+        <div class="modal-services__number js-modal-number"></div>
+        <h3 class="modal-services__title js-modal-title"></h3>
+        <div class="modal-services__text js-modal-text"></div>
+      </div>
+    </div>
+    <div class="modal-services__button js-modal-overlay-close">
+      <button class="button-secondary button-secondary_modal"></button>
+    </div>
+  </div>
+</div>
+
+      <header class="wrapper__header js-header-fixed"><div class="header">
+  <div class="header__logo header__logo_main">
+    <div class="logo logo_header">Vasilisa</div>
+  </div>
+  <div class="header__link">
+    <img class="header__icon" src="./assets/img/header/header_1.svg" alt="description" />
+    <div class="header__text">Наши аутлеты</div>
+  </div>
+  <div class="header__menu"><div class="main-menu">
+  <div class="main-menu__button">
+    <div class="main-menu__name">Меню</div>
+    <div class="main-menu__burger">
+      <div class="burger">
+        <div class="burger__element"></div>
+        <div class="burger__element"></div>
+        <div class="burger__element"></div>
+      </div>
+    </div>
+  </div>
+  <div class="main-menu__content">
+    <div class="main-menu__wrapper">
+      <div class="main-menu__logo">
+        <div class="main-menu__title">V</div>
+        <div class="main-menu__subtitle"><span>Реставрация</span> <span>роскоши</span></div>
+      </div>
+      <div class="main-menu__list">
+        <div class="main-menu__item">
+          <a class="main-menu__link" href="#">О компании</a>
+        </div>
+        <div class="main-menu__item">
+          <a class="main-menu__link" href="#">Услуги</a>
+        </div>
+        <div class="main-menu__item">
+          <a class="main-menu__link" href="#">Прейскурант</a>
+        </div>
+        <div class="main-menu__item">
+          <a class="main-menu__link" href="#">Наши преимущества</a>
+        </div>
+        <div class="main-menu__item">
+          <a class="main-menu__link" href="#">Наши аутлеты</a>
+        </div>
+        <div class="main-menu__item">
+          <a class="main-menu__link" href="#">Обратная связь</a>
+        </div>
+        <div class="main-menu__item">
+          <a class="main-menu__link" href="#">+7 900 555 00 00</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</header>
+      <main class="wrapper__main wrapper__main_index"><section class="main">
+  <div class="main__information">
+    <div class="main-information">
+      <h1 class="main-information__title">vasilisa</h1>
+      <h2 class="main-information__subtitle">реставрация роскоши</h2>
+      <div class="main-information__text">
+        <div class="main-information__item">Мы работаем</div>
+        <div class="main-information__item main-information__item_line"><div class="main-information__line"></div></div>
+        <div class="main-information__item main-information__item_since">с 1996 года</div>
+      </div>
+    </div>
+
+    <div class="main-information__telephone">
+      <div class="telephone">
+        <img class="telephone__icon" src="./assets/img/telephone/telephone_1.svg" alt="information" />
+        <a class="telephone__link" href="tel:+79005550000">+7 900 555 00 00</a>
+      </div>
+    </div>
+  </div>
+  <div class="main__wrapper">
+    <div class="main__image" style="background-image: url('./assets/img/main/main_background.png')" alt="information">
+      <img src="./assets/img/main/main_1.png" alt="" class="main__item js-carousel-item main__item_active" />
+      <img src="./assets/img/main/main_2.png" alt="" class="main__item js-carousel-item" />
+      <img src="./assets/img/main/main_3.png" alt="" class="main__item js-carousel-item" />
+    </div>
+  </div>
+</section>
+</main>
+    </div>
   </body>
 </html>

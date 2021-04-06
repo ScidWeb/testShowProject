@@ -29,7 +29,8 @@ function startModal() {
 
         overlay.classList.add('active');
 
-        compensationScroll();
+        compensationScrollWrapper();
+        compensationScrollHeader();
         toggleScrollBody();
 
         const newsData = await getNewsData(newsId);
@@ -83,7 +84,8 @@ function startModal() {
   }
 
   function closeModal() {
-    compensationScroll();
+    compensationScrollWrapper();
+    compensationScrollHeader();
     toggleScrollBody();
 
     overlay.classList.remove('active');

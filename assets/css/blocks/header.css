@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -40,6 +41,12 @@
     letter-spacing: 0.2em;
 }
 
+@media screen and (max-width: 590px) {
+    .header__logo_main {
+        visibility: hidden;
+    }
+}
+
 .header__link {
     display: flex;
     align-items: center;
@@ -53,8 +60,4 @@
 
 .header__icon {
     margin-right: 18px;
-}
-
-.header_fixed {
-    margin: inherit;
 }

@@ -1,0 +1,17 @@
+/* variables */
+.telephone {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.telephone__icon {
+    margin-right: 25px;
+}
+
+.telephone__link {
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+}
