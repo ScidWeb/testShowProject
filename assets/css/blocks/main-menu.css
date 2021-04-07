@@ -42,6 +42,7 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    color: #000000;
     background-color: #f0edeb;
     visibility: hidden;
     opacity: 0;
@@ -73,12 +74,18 @@
 }
 
 .main-menu__logo::after {
-    display: block;
+    display: none;
     width: 80px;
     height: 1px;
     margin: 0 auto;
     background-color: #a78460;
     content: '';
+}
+
+@media screen and (max-width: 590px) {
+    .main-menu__logo::after {
+        display: block;
+    }
 }
 
 .main-menu__title {

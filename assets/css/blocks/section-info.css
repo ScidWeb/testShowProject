@@ -12,7 +12,12 @@
     }
 }
 
+.section-info_dark {
+    color: #ddcebc;
+}
+
 .section-info__title {
+    margin-right: -0.2em;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 80px;
@@ -37,7 +42,37 @@
     }
 }
 
+.section-info__title_right {
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 1921px) {
+    .section-info__title_right {
+        font-size: 4.15vw;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .section-info__title_right {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .section-info__title_right {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .section-info__title_right {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+}
+
 .section-info__subtitle {
+    margin-right: -0.65em;
     margin-bottom: 40px;
     font-size: 25px;
     line-height: 1.6;
@@ -60,6 +95,24 @@
     }
 }
 
+@media screen and (min-width: 1921px) {
+    .section-info__subtitle_right {
+        font-size: 1.35vw;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .section-info__subtitle_right {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .section-info__subtitle_right {
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 590px) {
     .section-info__dash {
         display: none;
@@ -71,6 +124,12 @@
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 1921px) {
+    .section-info__text {
+        font-size: 1.15vw;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -88,12 +147,20 @@
     }
 }
 
+.section-info__text_right {
+    color: #ddcebc;
+}
+
+@media screen and (max-width: 1280px) {
+    .section-info__text_right {
+        font-size: 14px;
+    }
+}
+
 .section-info__text:not(:last-child) {
     margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1280px) {
-    .section-info__text:not(:last-child) {
-        margin-bottom: 40px;
-    }
+.section-info__text p:not(:last-child) {
+    margin-bottom: 40px;
 }
