@@ -389,8 +389,8 @@ button {
 .main-menu__logo {
     display: flex;
     flex-basis: 38%;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1280px) {
@@ -404,7 +404,7 @@ button {
     .main-menu__logo {
         flex-basis: auto;
         flex-shrink: 0;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
 }
 
