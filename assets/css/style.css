@@ -4,14 +4,14 @@
     font-weight: 400;
   font-family: 'Didot';
   font-style: normal;
-  src: url("/assets/fonts/Didot.woff2") format("woff2"), url("/assets/fonts/Didot.woff") format("woff");
+  src: url("../fonts/Didot.woff2") format("woff2"), url("../fonts/Didot.woff") format("woff");
 }
 
 @font-face {
     font-weight: 700;
   font-family: 'Didot';
   font-style: normal;
-  src: url("/assets/fonts/Didot-Bold.woff2") format("woff2"), url("/assets/fonts/Didot-Bold.woff") format("woff");
+  src: url("../fonts/Didot-Bold.woff2") format("woff2"), url("../fonts/Didot-Bold.woff") format("woff");
 }
 
 /* variables */
