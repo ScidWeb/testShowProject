@@ -36,7 +36,6 @@
     .about__title {
         flex-basis: 36%;
         flex-grow: 1;
-        padding-top: 50px;
     }
 }
 
@@ -59,6 +58,7 @@
     .about__content {
         align-items: center;
         height: auto;
+        margin-bottom: 45px;
     }
 }
 

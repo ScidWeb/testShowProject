@@ -156,6 +156,12 @@ button {
     }
 }
 
+@media screen and (max-width: 590px) {
+    .wrapper_about {
+        height: auto;
+    }
+}
+
 .wrapper_transparent {
     background-color: transparent;
 }
@@ -264,7 +270,7 @@ button {
 @media screen and (max-width: 590px) {
     .wrapper__main {
         margin-bottom: 40px;
-        padding-top: 49px;
+        padding-top: 55px;
     }
 }
 
@@ -315,6 +321,13 @@ button {
 @media screen and (max-width: 1280px) {
     .wrapper__main_outlets {
         padding-top: 110px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .wrapper__main_outlets {
+        margin-right: 0;
+        padding-top: 60px;
     }
 }
 

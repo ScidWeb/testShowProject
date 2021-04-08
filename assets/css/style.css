@@ -157,6 +157,12 @@ button {
     }
 }
 
+@media screen and (max-width: 590px) {
+    .wrapper_about {
+        height: auto;
+    }
+}
+
 .wrapper_transparent {
     background-color: transparent;
 }
@@ -265,7 +271,7 @@ button {
 @media screen and (max-width: 590px) {
     .wrapper__main {
         margin-bottom: 40px;
-        padding-top: 49px;
+        padding-top: 55px;
     }
 }
 
@@ -316,6 +322,13 @@ button {
 @media screen and (max-width: 1280px) {
     .wrapper__main_outlets {
         padding-top: 110px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .wrapper__main_outlets {
+        margin-right: 0;
+        padding-top: 60px;
     }
 }
 
@@ -684,7 +697,7 @@ button {
 
 @media screen and (max-width: 1280px) {
     .section-info__subtitle:not(:last-child) {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 }
 
@@ -1642,7 +1655,6 @@ button {
     .about__title {
         flex-basis: 36%;
         flex-grow: 1;
-        padding-top: 50px;
     }
 }
 
@@ -1665,6 +1677,7 @@ button {
     .about__content {
         align-items: center;
         height: auto;
+        margin-bottom: 45px;
     }
 }
 
@@ -1832,7 +1845,7 @@ button {
 
 @media screen and (max-width: 1280px) {
     .main-information__title {
-        margin-bottom: 0;
+        margin-bottom: 15px;
         font-size: 60px;
         line-height: 65px;
     }
@@ -1865,7 +1878,7 @@ button {
 
 @media screen and (max-width: 1280px) {
     .main-information__subtitle {
-        margin-bottom: 18px;
+        margin-bottom: 30px;
         font-size: 15px;
     }
 }
@@ -1990,13 +2003,7 @@ button {
 
 @media screen and (max-width: 1280px) {
     .outlets__title {
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .outlets__title {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 }
 
@@ -2318,7 +2325,7 @@ button {
 
 @media screen and (max-width: 590px) {
     .services__title {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 }
 
