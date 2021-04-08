@@ -29,6 +29,7 @@
     .main__information {
         flex-basis: auto;
         align-items: flex-start;
+        margin-right: 0;
     }
 }
 
@@ -177,6 +178,7 @@
 
 @media screen and (max-width: 590px) {
     .main-information__subtitle {
+        margin-right: -0.65em;
         font-size: 14px;
         line-height: 20px;
         white-space: normal;
