@@ -18,6 +18,7 @@
 
 <script src="./assets/js/helpers.min.js" defer></script>
 <script src="./assets/js/toggleMenu.min.js" defer></script>
+<script src="./assets/js/fixMenu.min.js" defer></script>
 
   </head>
   <body>
@@ -38,14 +39,15 @@
   </div>
 </div>
 
-      <header class="wrapper__header js-header-fixed"><div class="header">
-  <div class="header__logo">
+      <header class="wrapper__header wrapper__header_outlets js-header-fixed"><div class="header header_outlets">
+  <a class="header__logo header__logo_outlets" href="/">
     <div class="logo logo_header">Vasilisa</div>
-  </div>
-  <div class="header__link">
+  </a>
+
+  <a class="header__link header__link_outlets" href="/outlets.html">
     <img class="header__icon" src="./assets/img/header/header_1.svg" alt="description" />
     <div class="header__text">Наши аутлеты</div>
-  </div>
+  </a>
   <div class="header__menu"><div class="main-menu">
   <div class="main-menu__button">
     <div class="main-menu__name">Меню</div>
@@ -60,15 +62,19 @@
   <div class="main-menu__content">
     <div class="main-menu__wrapper">
       <div class="main-menu__logo">
-        <div class="main-menu__title">V</div>
-        <div class="main-menu__subtitle"><span>Реставрация</span> <span>роскоши</span></div>
+        <a class="main-menu__link main-menu__link_main" href="/">
+          <div class="main-menu-logo">
+            <div class="main-menu-logo__title">V</div>
+            <div class="main-menu-logo__subtitle"><span>Реставрация</span> <span>роскоши</span></div>
+          </div>
+        </a>
       </div>
       <div class="main-menu__list">
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">О компании</a>
+          <a class="main-menu__link" href="/about.html">О компании</a>
         </div>
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">Услуги</a>
+          <a class="main-menu__link" href="/services.html">Услуги</a>
         </div>
         <div class="main-menu__item">
           <a class="main-menu__link" href="#">Прейскурант</a>
@@ -77,13 +83,13 @@
           <a class="main-menu__link" href="#">Наши преимущества</a>
         </div>
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">Наши аутлеты</a>
+          <a class="main-menu__link" href="/outlets.html">Наши аутлеты</a>
         </div>
         <div class="main-menu__item">
           <a class="main-menu__link" href="#">Обратная связь</a>
         </div>
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">+7 900 555 00 00</a>
+          <a class="main-menu__link" href="tel:+79005550000">+7 900 555 00 00</a>
         </div>
       </div>
     </div>
@@ -92,10 +98,67 @@
 </div>
 </div>
 </header>
-      <div class="wrapper__logo">
+      <div class="wrapper__logo wrapper__logo_outlets">
         <div class="logo">Vasilisa</div>
       </div>
-      <main class="wrapper__main"></main>
+      <main class="wrapper__main wrapper__main_outlets"><section class="outlets">
+  <div class="outlets__title js-header-fixed-control">
+    <div class="section-info section-info_right">
+      <h1 class="section-info__title section-info__title_outlets">Наши аутлеты</h1>
+      <h2 class="section-info__subtitle section-info__subtitle_outlets">контактная информация</h2>
+    </div>
+  </div>
+  <div class="outlets__information">
+    <div class="outlets-information">
+      <div class="outlets-information__images">
+        <div class="outlets-information__wrapper">
+          <img class="outlets-information__image" src="./assets/img/outlets/outlets_1.jpg" alt="information" />
+        </div>
+        <div class="outlets-information__wrapper">
+          <img class="outlets-information__image" src="./assets/img/outlets/outlets_2.jpg" alt="information" />
+        </div>
+      </div>
+      <div class="outlets-information__content">
+        <img class="outlets-information__icon" src="./assets/img/header/header_1.svg" alt="information" />
+        <div class="outlets-information__text">По вопросам ремонта одежды, обуви и химчистки обращаться по адресам, указанным ниже:</div>
+      </div>
+    </div>
+  </div>
+  <div class="outlets__content">
+    <div class="outlets-content">
+      <div class="outlets-content__row">
+        <div class="outlets-content__contacts">
+          <div class="outlets-content__number">1.</div>
+          <div class="outlets-content__text">
+            <div class="outlets-content__item"><span class="outlets-content__item_lighten">Адрес:</span>Москва, ул. Осташковская, 12</div>
+            <div class="outlets-content__item"><span class="outlets-content__item_lighten">Телефон:</span>+7 999 000 00 00</div>
+            <div class="outlets-content__item"><span class="outlets-content__item_lighten">Электронный адрес:</span>vasilisa@gmail.ru</div>
+            <div class="outlets-content__item">
+              <span class="outlets-content__item_lighten">Часы работы:</span>ежедневно с 9:00 до 23:00
+            </div>
+          </div>
+        </div>
+        <img src="./assets/img/outlets/outlets_3.jpg" alt="" class="outlets-content__map" />
+      </div>
+
+      <div class="outlets-content__row">
+        <div class="outlets-content__contacts">
+          <div class="outlets-content__number">2.</div>
+          <div class="outlets-content__text">
+            <div class="outlets-content__item"><span class="outlets-content__item_lighten">Адрес:</span>Москва, ул. Осташковская, 12</div>
+            <div class="outlets-content__item"><span class="outlets-content__item_lighten">Телефон:</span>+7 999 000 00 00</div>
+            <div class="outlets-content__item"><span class="outlets-content__item_lighten">Электронный адрес:</span>vasilisa@gmail.ru</div>
+            <div class="outlets-content__item">
+              <span class="outlets-content__item_lighten">Часы работы:</span>ежедневно с 9:00 до 23:00
+            </div>
+          </div>
+        </div>
+        <img src="./assets/img/outlets/outlets_3.jpg" alt="" class="outlets-content__map" />
+      </div>
+    </div>
+  </div>
+</section>
+</main>
       <footer class="wrapper__footer"><div class="footer">vasilisa © Copyright, 2021 СКАИД</div>
 </footer>
     </div>

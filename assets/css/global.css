@@ -143,7 +143,7 @@ button {
     }
 }
 
-.wrapper_dark {
+.wrapper_about {
     height: 100vh;
     padding-bottom: 50px;
     color: #ddcebc;
@@ -151,7 +151,7 @@ button {
 }
 
 @media screen and (max-width: 1440px) {
-    .wrapper_dark {
+    .wrapper_about {
         padding-bottom: 40px;
     }
 }
@@ -239,8 +239,14 @@ button {
     }
 }
 
-.wrapper__logo_dark {
+.wrapper__logo_about {
     color: #a78460;
+}
+
+@media screen and (max-width: 1700px) {
+    .wrapper__logo_outlets {
+        display: none;
+    }
 }
 
 .wrapper__main {
@@ -268,41 +274,47 @@ button {
     margin-bottom: 0;
 }
 
-.wrapper__main_right {
+.wrapper__main_about {
     margin-right: 180px;
     padding-top: 4.5%;
     padding-bottom: 4.5%;
 }
 
 @media screen and (max-width: 1700px) {
-    .wrapper__main_right {
+    .wrapper__main_about {
         margin-right: 80px;
     }
 }
 
 @media screen and (max-width: 1440px) {
-    .wrapper__main_right {
+    .wrapper__main_about {
         margin-right: 70px;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    .wrapper__main_right {
+    .wrapper__main_about {
         padding-top: 0;
         padding-bottom: 0;
     }
 }
 
 @media screen and (max-width: 960px) {
-    .wrapper__main_right {
+    .wrapper__main_about {
         margin-right: 55px;
     }
 }
 
 @media screen and (max-width: 590px) {
-    .wrapper__main_right {
+    .wrapper__main_about {
         margin-right: 0;
         padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .wrapper__main_outlets {
+        padding-top: 110px;
     }
 }
 

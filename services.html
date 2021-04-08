@@ -45,13 +45,13 @@
 </div>
 
       <header class="wrapper__header js-header-fixed"><div class="header">
-  <div class="header__logo">
+  <a class="header__logo" href="/">
     <div class="logo logo_header">Vasilisa</div>
-  </div>
-  <div class="header__link">
+  </a>
+  <a class="header__link" href="/outlets.html">
     <img class="header__icon" src="./assets/img/header/header_1.svg" alt="description" />
     <div class="header__text">Наши аутлеты</div>
-  </div>
+  </a>
   <div class="header__menu"><div class="main-menu">
   <div class="main-menu__button">
     <div class="main-menu__name">Меню</div>
@@ -66,15 +66,19 @@
   <div class="main-menu__content">
     <div class="main-menu__wrapper">
       <div class="main-menu__logo">
-        <div class="main-menu__title">V</div>
-        <div class="main-menu__subtitle"><span>Реставрация</span> <span>роскоши</span></div>
+        <a class="main-menu__link main-menu__link_main" href="/">
+          <div class="main-menu-logo">
+            <div class="main-menu-logo__title">V</div>
+            <div class="main-menu-logo__subtitle"><span>Реставрация</span> <span>роскоши</span></div>
+          </div>
+        </a>
       </div>
       <div class="main-menu__list">
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">О компании</a>
+          <a class="main-menu__link" href="/about.html">О компании</a>
         </div>
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">Услуги</a>
+          <a class="main-menu__link" href="/services.html">Услуги</a>
         </div>
         <div class="main-menu__item">
           <a class="main-menu__link" href="#">Прейскурант</a>
@@ -83,13 +87,13 @@
           <a class="main-menu__link" href="#">Наши преимущества</a>
         </div>
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">Наши аутлеты</a>
+          <a class="main-menu__link" href="/outlets.html">Наши аутлеты</a>
         </div>
         <div class="main-menu__item">
           <a class="main-menu__link" href="#">Обратная связь</a>
         </div>
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">+7 900 555 00 00</a>
+          <a class="main-menu__link" href="tel:+79005550000">+7 900 555 00 00</a>
         </div>
       </div>
     </div>
@@ -207,13 +211,13 @@
           </div>
 
           <div class="feedback__item">
-            <label class="feedback__label" for="formTelephone"> Телефон<span class="feedback__required">*</span></label>
+            <label class="feedback__label" for="feedbackTelephone"> Телефон<span class="feedback__required">*</span></label>
             <input id="feedbackTelephone" class="feedback__input" name="feedbackTelephone" type="tel" required />
           </div>
 
           <div class="feedback__item">
             <label class="feedback__label" for="feedbackComment"> Ваш комментарий </label>
-            <textarea id="feedbackComment" class="feedback__textarea" name="feedbackComment" type="text"> </textarea>
+            <textarea id="feedbackComment" class="feedback__textarea" name="feedbackComment"> </textarea>
           </div>
 
           <div class="feedback__item">

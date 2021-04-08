@@ -18,10 +18,11 @@
 
 <script src="./assets/js/helpers.min.js" defer></script>
 <script src="./assets/js/toggleMenu.min.js" defer></script>
+<script src="./assets/js/fixMenu.min.js" defer></script>
 
   </head>
   <body>
-    <div class="wrapper wrapper_dark js-wrapper-main">
+    <div class="wrapper wrapper_about js-wrapper-main">
       <div class="modal js-modal-overlay">
   <div class="modal__background js-modal-overlay-close"></div>
   <div class="modal__wrapper">
@@ -39,13 +40,13 @@
 </div>
 
       <header class="wrapper__header js-header-fixed"><div class="header">
-  <div class="header__logo">
+  <a class="header__logo" href="/">
     <div class="logo logo_header">Vasilisa</div>
-  </div>
-  <div class="header__link">
+  </a>
+  <a class="header__link" href="/outlets.html">
     <img class="header__icon" src="./assets/img/header/header_1.svg" alt="description" />
     <div class="header__text">Наши аутлеты</div>
-  </div>
+  </a>
   <div class="header__menu"><div class="main-menu">
   <div class="main-menu__button">
     <div class="main-menu__name">Меню</div>
@@ -60,15 +61,19 @@
   <div class="main-menu__content">
     <div class="main-menu__wrapper">
       <div class="main-menu__logo">
-        <div class="main-menu__title">V</div>
-        <div class="main-menu__subtitle"><span>Реставрация</span> <span>роскоши</span></div>
+        <a class="main-menu__link main-menu__link_main" href="/">
+          <div class="main-menu-logo">
+            <div class="main-menu-logo__title">V</div>
+            <div class="main-menu-logo__subtitle"><span>Реставрация</span> <span>роскоши</span></div>
+          </div>
+        </a>
       </div>
       <div class="main-menu__list">
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">О компании</a>
+          <a class="main-menu__link" href="/about.html">О компании</a>
         </div>
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">Услуги</a>
+          <a class="main-menu__link" href="/services.html">Услуги</a>
         </div>
         <div class="main-menu__item">
           <a class="main-menu__link" href="#">Прейскурант</a>
@@ -77,13 +82,13 @@
           <a class="main-menu__link" href="#">Наши преимущества</a>
         </div>
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">Наши аутлеты</a>
+          <a class="main-menu__link" href="/outlets.html">Наши аутлеты</a>
         </div>
         <div class="main-menu__item">
           <a class="main-menu__link" href="#">Обратная связь</a>
         </div>
         <div class="main-menu__item">
-          <a class="main-menu__link" href="#">+7 900 555 00 00</a>
+          <a class="main-menu__link" href="tel:+79005550000">+7 900 555 00 00</a>
         </div>
       </div>
     </div>
@@ -92,10 +97,10 @@
 </div>
 </div>
 </header>
-      <div class="wrapper__logo wrapper__logo_dark">
+      <div class="wrapper__logo wrapper__logo_about">
         <div class="logo">Vasilisa</div>
       </div>
-      <main class="wrapper__main wrapper__main_right wrapper__main_index">
+      <main class="wrapper__main wrapper__main_about wrapper__main_index">
         <section class="about">
   <div class="about__content">
     <div class="about__background">
@@ -119,16 +124,16 @@
     <div class="about__telephone">
       <div class="telephone">
         <img class="telephone__icon" src="./assets/img/telephone/telephone_1.svg" alt="information" />
-        <a class="telephone__link telephone__link_dark" href="tel:+79005550000">+7 900 555 00 00</a>
+        <a class="telephone__link telephone__link_about" href="tel:+79005550000">+7 900 555 00 00</a>
       </div>
     </div>
   </div>
 
   <div class="about__title">
-    <div class="section-info section-info_dark">
-      <h1 class="section-info__title section-info__title_right">О компании</h1>
-      <h2 class="section-info__subtitle section-info__subtitle_right">Чем мы лучше остальных</h2>
-      <div class="section-info__text section-info__text_right">
+    <div class="section-info section-info_about">
+      <h1 class="section-info__title section-info__title_about">О компании</h1>
+      <h2 class="section-info__subtitle section-info__subtitle_about">Чем мы лучше остальных</h2>
+      <div class="section-info__text section-info__text_about">
         <p>
           Если ваша дорогая одежда или дизайнерские вещи ручной работы требуют стирки и чистки, не стоит пытаться самостоятельно привести их
           в порядок – решить проблему поможет элитная химчистка эксклюзивной одежды в Москве «vasilisa».
