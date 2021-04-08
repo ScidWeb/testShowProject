@@ -271,7 +271,7 @@ button {
 @media screen and (max-width: 590px) {
     .wrapper__main {
         margin-bottom: 40px;
-        padding-top: 55px;
+        padding-top: 60px;
     }
 }
 
@@ -651,7 +651,7 @@ button {
 @media screen and (max-width: 590px) {
     .section-info__title_about {
         font-size: 26px;
-        line-height: 1.15;
+        line-height: 1.155;
     }
 }
 
@@ -664,7 +664,7 @@ button {
 @media screen and (max-width: 960px) {
     .section-info__title_outlets {
         font-size: 26px;
-        line-height: 1.15;
+        line-height: 1.155;
         text-align: center;
     }
 }
