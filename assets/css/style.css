@@ -926,7 +926,6 @@ button {
 .header__link {
     display: flex;
     align-items: center;
-    color: #ddcebc;
 }
 
 @media all and (max-width: 1280px) {
@@ -939,6 +938,10 @@ button {
     .header__link_outlets {
         display: none;
     }
+}
+
+.header__link_about {
+    color: #ddcebc;
 }
 
 .header__icon {
