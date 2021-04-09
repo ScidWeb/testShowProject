@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .section-info {
         text-align: center;
     }
@@ -31,7 +31,7 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .section-info__title {
         margin-bottom: 15px;
         font-size: 40px;
@@ -39,7 +39,7 @@
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .section-info__title {
         font-size: 26px;
         line-height: 1.155;
@@ -50,44 +50,45 @@
     white-space: nowrap;
 }
 
-@media screen and (min-width: 1921px) {
+@media all and (min-width: 1921px) {
     .section-info__title_about {
         font-size: 4.15vw;
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media all and (max-width: 1440px) {
     .section-info__title_about {
         font-size: 70px;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .section-info__title_about {
         font-size: 40px;
     }
 }
 
-@media screen and (max-height: 720px) {
+@media all and (max-height: 720px) and (max-width: 960px), all and (max-height: 590px) and (max-width: 1280px), all and (max-height: 720px) and (min-width: 1280px) {
     .section-info__title_about {
-        font-size: 40px;
+        font-size: 7vh;
+        margin-bottom: 0.4em;
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .section-info__title_about {
         font-size: 26px;
         line-height: 1.155;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .section-info__title_outlets {
         font-size: 80px;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media all and (max-width: 960px) {
     .section-info__title_outlets {
         font-size: 26px;
         line-height: 1.155;
@@ -103,14 +104,14 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .section-info__subtitle {
         font-size: 15px;
         line-height: 1.33;
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .section-info__subtitle {
         font-size: 14px;
         line-height: 1.43;
@@ -121,43 +122,50 @@
     margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .section-info__subtitle:not(:last-child) {
         margin-bottom: 30px;
     }
 }
 
-@media screen and (min-width: 1921px) {
+@media all and (min-width: 1921px) {
     .section-info__subtitle_about {
         font-size: 1.35vw;
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media all and (max-width: 1440px) {
     .section-info__subtitle_about {
         font-size: 22px;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .section-info__subtitle_about {
         font-size: 15px;
     }
 }
 
-@media screen and (max-height: 720px) {
+@media all and (max-height: 720px) and (max-width: 960px), all and (max-height: 590px) and (max-width: 1280px), all and (max-height: 720px) and (min-width: 1280px) {
+    .section-info__subtitle_about {
+        margin-bottom: 2em;
+        font-size: 2.5vh;
+    }
+}
+
+@media all and (max-width: 590px) {
     .section-info__subtitle_about {
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .section-info__subtitle_outlets {
         font-size: 22px;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media all and (max-width: 960px) {
     .section-info__subtitle_outlets {
         font-size: 14px;
         line-height: 1.43;
@@ -165,7 +173,7 @@
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .section-info__dash {
         display: none;
     }
@@ -178,13 +186,13 @@
     letter-spacing: 0.05em;
 }
 
-@media screen and (min-width: 1921px) {
+@media all and (min-width: 1921px) {
     .section-info__text {
         font-size: 1.15vw;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .section-info__text {
         font-size: 16px;
         line-height: 1;
@@ -192,7 +200,7 @@
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .section-info__text {
         font-size: 16px;
         line-height: 1.625;
@@ -203,13 +211,19 @@
     color: #ddcebc;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .section-info__text_about {
         font-size: 14px;
     }
 }
 
-@media screen and (max-height: 720px) {
+@media all and (max-height: 720px) and (max-width: 960px), all and (max-height: 590px) and (max-width: 1280px), all and (max-height: 720px) and (min-width: 1280px) {
+    .section-info__text_about {
+        font-size: 2.4vh;
+    }
+}
+
+@media all and (max-width: 590px) {
     .section-info__text_about {
         font-size: 14px;
     }
@@ -219,6 +233,18 @@
     margin-bottom: 40px;
 }
 
+@media all and (max-height: 720px) and (max-width: 960px), all and (max-height: 590px) and (max-width: 1280px), all and (max-height: 720px) and (min-width: 1280px) {
+    .section-info__text:not(:last-child) {
+        margin-bottom: 1.5em;
+    }
+}
+
 .section-info__text p:not(:last-child) {
     margin-bottom: 40px;
+}
+
+@media all and (max-height: 720px) and (max-width: 960px), all and (max-height: 590px) and (max-width: 1280px), all and (max-height: 720px) and (min-width: 1280px) {
+    .section-info__text p:not(:last-child) {
+        margin-bottom: 1.5em;
+    }
 }

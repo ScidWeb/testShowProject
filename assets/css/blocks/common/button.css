@@ -21,19 +21,19 @@
     border-radius: 30px;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .button_form {
         padding: 23px 16%;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media all and (max-width: 960px) {
     .button_form {
         padding: 23px 12%;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media all and (max-width: 720px) {
     .button_form {
         padding: 23px 37px;
     }

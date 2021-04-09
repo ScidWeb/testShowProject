@@ -22,35 +22,35 @@
     margin: -5px;
 }
 
-@media screen and (max-width: 1700px) {
+@media all and (max-width: 1700px) {
     .text-movie__background {
         max-width: 44.5vw;
         max-height: 73vh;
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media all and (max-width: 1440px) {
     .text-movie__background {
         max-width: 40vw;
         max-height: 67vh;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .text-movie__background {
         max-width: 51vw;
         max-height: 84vh;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media all and (max-width: 960px) {
     .text-movie__background {
         max-width: 34vw;
         max-height: 42vh;
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .text-movie__background {
         max-width: 90vw;
         min-height: auto;

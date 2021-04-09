@@ -6,7 +6,7 @@
     letter-spacing: 0.05em;
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .footer {
         display: flex;
         align-items: center;

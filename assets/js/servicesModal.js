@@ -1,6 +1,18 @@
 function startModal() {
   let cacheNews = [];
 
+  // localStorage.clear('cacheNews');
+
+  localCacheNews = localStorage.getItem('cacheNews');
+
+  if (localCacheNews) {
+    cacheNews = JSON.parse(localCacheNews);
+  } else {
+    localStorage.setItem('cacheNews', JSON.stringify(cacheNews));
+  }
+
+  console.log(localCacheNews, cacheNews);
+
   const overlay = document.querySelector('.js-modal-overlay');
   const overlayBackground = document.querySelector('.js-modal-overlay-background');
   const overlayNumber = document.querySelector('.js-modal-number');
@@ -47,7 +59,7 @@ function startModal() {
 
   async function getNewsData(newsId) {
     const empty = {
-      id: newsId,
+      id: Number(newsId),
       number: 'No data',
       title: 'No data',
       text: 'No data',
@@ -70,10 +82,14 @@ function startModal() {
 
       if (currentNews) {
         cacheNews.push(currentNews);
+        localStorage.setItem('cacheNews', JSON.stringify(cacheNews));
+
         return currentNews;
       } else {
         console.log(`No data by '${newsId}' id`);
         cacheNews.push(empty);
+        localStorage.setItem('cacheNews', JSON.stringify(cacheNews));
+
         return empty;
       }
     } else {

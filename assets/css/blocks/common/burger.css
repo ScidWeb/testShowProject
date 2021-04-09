@@ -31,7 +31,7 @@
     transform-origin: left center;
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .burger__element:nth-child(2) {
         top: 10px;
     }

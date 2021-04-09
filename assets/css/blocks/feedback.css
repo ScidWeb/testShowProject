@@ -3,7 +3,7 @@
     display: flex;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .feedback {
         flex-direction: column;
     }
@@ -13,7 +13,7 @@
     flex-basis: 50%;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .feedback__info {
         margin-bottom: 40px;
     }
@@ -24,13 +24,13 @@
     flex-direction: row;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .feedback__confidentiality {
         margin-bottom: 40px;
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .feedback__confidentiality {
         margin-bottom: 0;
     }
@@ -48,25 +48,25 @@
     margin-right: 20px;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .feedback__checkbox {
         margin-right: 6%;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media all and (max-width: 960px) {
     .feedback__checkbox {
         margin-right: 4%;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media all and (max-width: 720px) {
     .feedback__checkbox {
         margin-right: 20px;
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .feedback__checkbox {
         margin-right: 10px;
     }
@@ -79,7 +79,7 @@
     letter-spacing: 0.05em;
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .feedback__text {
         font-size: 12px;
     }
@@ -96,13 +96,13 @@
     background-color: #ece5e0;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .feedback__form {
         margin-left: 0;
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .feedback__form {
         margin-bottom: 40px;
     }
@@ -113,19 +113,19 @@
     border: 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .feedback__wrapper {
         padding: 70px 14%;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media all and (max-width: 720px) {
     .feedback__wrapper {
         padding: 70px 12%;
     }
 }
 
-@media screen and (max-width: 590px) {
+@media all and (max-width: 590px) {
     .feedback__wrapper {
         padding: 40px 12%;
     }
@@ -142,7 +142,7 @@
     justify-content: flex-start;
 }
 
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
     .feedback__button {
         justify-content: center;
     }
