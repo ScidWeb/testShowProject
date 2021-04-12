@@ -15,14 +15,9 @@
     top: 0;
     left: 0;
     z-index: 1;
-    display: block;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: auto;
     max-width: 46vw;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: auto;
     max-height: 76vh;
     margin: -5px;
 }
@@ -58,7 +53,7 @@
 @media all and (max-width: 590px) {
     .text-movie__background {
         max-width: 90vw;
-        min-height: auto;
+        max-height: auto;
     }
 }
 
