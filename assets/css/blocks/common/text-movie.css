@@ -73,6 +73,8 @@
     top: 0;
     left: 0;
     z-index: 0;
+    min-width: 100px;
+    min-height: 50px;
     height: 100%;
     -o-object-fit: contain;
     object-fit: contain;

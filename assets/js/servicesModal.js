@@ -3,12 +3,12 @@ function startModal() {
 
   // localStorage.clear('cacheNews');
 
-  localCacheNews = localStorage.getItem('cacheNews');
+  localCacheNews = sessionStorage.getItem('cacheNews');
 
   if (localCacheNews) {
     cacheNews = JSON.parse(localCacheNews);
   } else {
-    localStorage.setItem('cacheNews', JSON.stringify(cacheNews));
+    sessionStorage.setItem('cacheNews', JSON.stringify(cacheNews));
   }
 
   const overlay = document.querySelector('.js-modal-overlay');
@@ -82,13 +82,13 @@ function startModal() {
 
       if (currentNews) {
         cacheNews.push(currentNews);
-        localStorage.setItem('cacheNews', JSON.stringify(cacheNews));
+        sessionStorage.setItem('cacheNews', JSON.stringify(cacheNews));
 
         return currentNews;
       } else {
         console.log(`No data by '${newsId}' id`);
         cacheNews.push(empty);
-        localStorage.setItem('cacheNews', JSON.stringify(cacheNews));
+        sessionStorage.setItem('cacheNews', JSON.stringify(cacheNews));
 
         return empty;
       }
