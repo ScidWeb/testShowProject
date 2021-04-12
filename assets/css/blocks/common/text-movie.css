@@ -16,11 +16,13 @@
     left: 0;
     z-index: 1;
     display: block;
-    width: auto;
-    min-width: 500px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     max-width: 46vw;
-    height: auto;
-    min-height: 500px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     max-height: 76vh;
     margin: -5px;
 }
