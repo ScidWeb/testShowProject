@@ -1638,9 +1638,9 @@ button {
     top: 0;
     left: 0;
     z-index: 1;
-    width: auto;
+    width: 500px;
     max-width: 46vw;
-    height: auto;
+    height: 500px;
     max-height: 76vh;
     margin: -5px;
 }
@@ -1684,8 +1684,8 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 500px;
-    height: 500px;
+    width: 99%;
+    height: 99%;
     overflow: hidden;
 }
 
@@ -1694,8 +1694,7 @@ button {
     top: 0;
     left: 0;
     z-index: 0;
-    width: 500px;
-    height: 500px;
+    height: 100%;
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: left;
