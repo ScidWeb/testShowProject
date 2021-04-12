@@ -1684,10 +1684,8 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 99%;
-    min-width: 501px;
-    height: 99%;
-    min-height: 501px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -1696,9 +1694,8 @@ button {
     top: 0;
     left: 0;
     z-index: 0;
-    min-width: 501px;
-    min-height: 501px;
-    height: 100%;
+    width: 500px;
+    height: 500px;
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: left;
