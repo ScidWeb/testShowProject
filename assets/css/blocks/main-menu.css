@@ -17,6 +17,7 @@
 .main-menu__button {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .main-menu__wrapper {

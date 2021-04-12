@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- prettier-ignore -->
   <head>
     <meta charset="UTF-8" />
-<title>Title</title>
+<title>Index</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="keywords" content="keywords" />
 <meta name="description" content="description" />
+
+
+
 <link href="./assets/css/style.css" rel="stylesheet" />
 
 <link href="https://fonts.gstatic.com/" rel="preconnect dns-prefetch" crossorigin />
@@ -16,9 +20,12 @@
   rel="stylesheet"
 />
 
+
+
 <script src="./assets/js/helpers.min.js" defer></script>
 <script src="./assets/js/toggleMenu.min.js" defer></script>
-<script src="./assets/js/carousel.min.js" defer></script>
+
+    <script src='./assets/js/carousel.min.js' defer></script>
 
   </head>
   <body>
@@ -39,27 +46,28 @@
   </div>
 </div>
 
-      <header class="wrapper__header js-header-fixed"><div class="header">
-  <a class="header__logo header__logo_main" href="/">
-    <div class="logo logo_header">Vasilisa</div>
-  </a>
 
-  <a class="header__link" href="/testShowProject/outlets.html">
+      <!-- prettier-ignore -->
+      <header class="wrapper__header js-header-fixed"><div class="header ">
+  <div class="header__logo header__logo_main">
+    <a class="logo logo_header" href="/">Vasilisa</a>
+  </div>
+  <a class="header__link " href="/testShowProject/outlets.html">
     <img class="header__icon" src="./assets/img/header/header_1.svg" alt="description" />
     <div class="header__text">Наши аутлеты</div>
   </a>
   <div class="header__menu"><div class="main-menu">
-  <div class="main-menu__button">
+  <div class="main-menu__button js-modal-button">
     <div class="main-menu__name">Меню</div>
     <div class="main-menu__burger">
-      <div class="burger">
+      <div class="burger js-modal-burger">
         <div class="burger__element"></div>
         <div class="burger__element"></div>
         <div class="burger__element"></div>
       </div>
     </div>
   </div>
-  <div class="main-menu__content">
+  <div class="main-menu__content js-modal-content">
     <div class="main-menu__wrapper">
       <div class="main-menu__logo">
         <a class="main-menu__link main-menu__link_main" href="/testShowProject/">
@@ -97,7 +105,9 @@
 </div>
 </div>
 </div>
-</header>
+
+      </header>
+
       <main class="wrapper__main wrapper__main_index"><section class="main">
   <div class="main__information">
     <div class="main-information">
@@ -118,10 +128,28 @@
     </div>
   </div>
   <div class="main__wrapper">
-    <div class="main__image" style="background-image: url('./assets/img/main/main_background.png')">
-      <img src="./assets/img/main/main_1.png" alt="" class="main__item js-carousel-item main__item_active" />
+    <div class="main__image" style="background-image: url('./assets/img/main/main_background.jpg')">
+      <picture>
+        <source srcset="./assets/img/main/main_1.webp" type="image/webp" />
+        <source srcset="./assets/img/main/main_1.jpg" type="image/jpeg" />
+        <img class="main__item js-carousel-item main__item_active" src="./assets/img/main/main_1.jpg" alt="information" />
+      </picture>
+
+      <picture>
+        <source srcset="./assets/img/main/main_2.webp" type="image/webp" />
+        <source srcset="./assets/img/main/main_2.jpg" type="image/jpeg" />
+        <img class="main__item js-carousel-item" src="./assets/img/main/main_2.jpg" alt="information" />
+      </picture>
+
+      <picture>
+        <source srcset="./assets/img/main/main_3.webp" type="image/webp" />
+        <source srcset="./assets/img/main/main_3.jpg" type="image/jpeg" />
+        <img class="main__item js-carousel-item" src="./assets/img/main/main_3.jpg" alt="information" />
+      </picture>
+
+      <!-- <img src="./assets/img/main/main_1.png" alt="" class="main__item js-carousel-item main__item_active" />
       <img src="./assets/img/main/main_2.png" alt="" class="main__item js-carousel-item" />
-      <img src="./assets/img/main/main_3.png" alt="" class="main__item js-carousel-item" />
+      <img src="./assets/img/main/main_3.png" alt="" class="main__item js-carousel-item" /> -->
     </div>
   </div>
 </section>

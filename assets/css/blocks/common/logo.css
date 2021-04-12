@@ -1,5 +1,6 @@
 /* variables */
 .logo {
+    color: #000000;
     font-weight: 700;
     font-size: 22.5px;
     font-family: 'Didot', serif;
@@ -13,4 +14,8 @@
         font-size: 16.5px;
         line-height: 1.125;
     }
+}
+
+.logo_about {
+    color: #a78460;
 }

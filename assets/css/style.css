@@ -246,10 +246,6 @@ button {
     }
 }
 
-.wrapper__logo_about {
-    color: #a78460;
-}
-
 @media all and (max-width: 1700px) {
     .wrapper__logo_outlets {
         display: none;
@@ -283,8 +279,7 @@ button {
 
 .wrapper__main_about {
     margin-right: 180px;
-    padding-top: 4.5%;
-    padding-bottom: 4.5%;
+    padding-top: 0;
 }
 
 @media all and (max-width: 1700px) {
@@ -299,13 +294,6 @@ button {
     }
 }
 
-@media all and (max-width: 1280px) {
-    .wrapper__main_about {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
-
 @media all and (max-width: 960px) {
     .wrapper__main_about {
         margin-right: 55px;
@@ -315,7 +303,6 @@ button {
 @media all and (max-width: 590px) {
     .wrapper__main_about {
         margin-right: 0;
-        padding-top: 60px;
     }
 }
 
@@ -362,6 +349,7 @@ button {
 .main-menu__button {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .main-menu__wrapper {
@@ -1397,6 +1385,7 @@ button {
 
 /* variables */
 .logo {
+    color: #000000;
     font-weight: 700;
     font-size: 22.5px;
     font-family: 'Didot', serif;
@@ -1410,6 +1399,10 @@ button {
         font-size: 16.5px;
         line-height: 1.125;
     }
+}
+
+.logo_about {
+    color: #a78460;
 }
 
 /* variables */
@@ -1765,11 +1758,19 @@ button {
     position: absolute;
     top: 0;
     left: 0;
+    padding-top: 85px;
+}
+
+@media all and (max-width: 1280px) {
+    .about__background {
+        padding-top: 0;
+    }
 }
 
 @media all and (max-width: 590px) {
     .about__background {
         position: relative;
+        padding-top: 60px;
     }
 }
 
@@ -1896,7 +1897,7 @@ button {
     -o-object-position: right bottom;
     object-position: right bottom;
     opacity: 0;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .main__item_active {

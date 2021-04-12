@@ -245,10 +245,6 @@ button {
     }
 }
 
-.wrapper__logo_about {
-    color: #a78460;
-}
-
 @media all and (max-width: 1700px) {
     .wrapper__logo_outlets {
         display: none;
@@ -282,8 +278,7 @@ button {
 
 .wrapper__main_about {
     margin-right: 180px;
-    padding-top: 4.5%;
-    padding-bottom: 4.5%;
+    padding-top: 0;
 }
 
 @media all and (max-width: 1700px) {
@@ -298,13 +293,6 @@ button {
     }
 }
 
-@media all and (max-width: 1280px) {
-    .wrapper__main_about {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
-
 @media all and (max-width: 960px) {
     .wrapper__main_about {
         margin-right: 55px;
@@ -314,7 +302,6 @@ button {
 @media all and (max-width: 590px) {
     .wrapper__main_about {
         margin-right: 0;
-        padding-top: 60px;
     }
 }
 

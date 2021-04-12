@@ -11,8 +11,10 @@ function carouselStart() {
       currentIndex = 0;
     }
 
-    elements[currentIndex].classList.add('main__item_active');
-  }, 5000);
+    setTimeout(() => {
+      elements[currentIndex].classList.add('main__item_active');
+    }, 2000);
+  }, 7000);
 }
 
 carouselStart();

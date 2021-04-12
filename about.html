@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- prettier-ignore -->
   <head>
     <meta charset="UTF-8" />
-<title>Title</title>
+<title>About</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="keywords" content="keywords" />
 <meta name="description" content="description" />
+
+
+
 <link href="./assets/css/style.css" rel="stylesheet" />
 
 <link href="https://fonts.gstatic.com/" rel="preconnect dns-prefetch" crossorigin />
@@ -16,9 +20,12 @@
   rel="stylesheet"
 />
 
+
+
 <script src="./assets/js/helpers.min.js" defer></script>
 <script src="./assets/js/toggleMenu.min.js" defer></script>
-<script src="./assets/js/fixMenu.min.js" defer></script>
+
+
 
   </head>
   <body>
@@ -39,26 +46,28 @@
   </div>
 </div>
 
-      <header class="wrapper__header js-header-fixed"><div class="header">
-  <a class="header__logo" href="/">
-    <div class="logo logo_header">Vasilisa</div>
-  </a>
+
+      <!-- prettier-ignore -->
+      <header class="wrapper__header js-header-fixed"><div class="header ">
+  <div class="header__logo ">
+    <a class="logo logo_header" href="/">Vasilisa</a>
+  </div>
   <a class="header__link header__link_about" href="/testShowProject/outlets.html">
     <img class="header__icon" src="./assets/img/header/header_1.svg" alt="description" />
     <div class="header__text">Наши аутлеты</div>
   </a>
   <div class="header__menu"><div class="main-menu">
-  <div class="main-menu__button">
+  <div class="main-menu__button js-modal-button">
     <div class="main-menu__name">Меню</div>
     <div class="main-menu__burger">
-      <div class="burger">
+      <div class="burger js-modal-burger">
         <div class="burger__element"></div>
         <div class="burger__element"></div>
         <div class="burger__element"></div>
       </div>
     </div>
   </div>
-  <div class="main-menu__content">
+  <div class="main-menu__content js-modal-content">
     <div class="main-menu__wrapper">
       <div class="main-menu__logo">
         <a class="main-menu__link main-menu__link_main" href="/testShowProject/">
@@ -96,9 +105,11 @@
 </div>
 </div>
 </div>
-</header>
+
+      </header>
+
       <div class="wrapper__logo wrapper__logo_about">
-        <div class="logo">Vasilisa</div>
+        <a class="logo logo_about" href="/">Vasilisa</a>
       </div>
       <main class="wrapper__main wrapper__main_about wrapper__main_index">
         <section class="about">

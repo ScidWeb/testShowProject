@@ -1,9 +1,10 @@
 function toggleMenu() {
-  const burger = document.querySelector('.burger');
-  const menuContent = document.querySelector('.main-menu__content');
+  const modalBurger = document.querySelector('.js-modal-burger');
+  const modalButton = document.querySelector('.js-modal-button');
+  const menuContent = document.querySelector('.js-modal-content');
 
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
+  modalButton.addEventListener('click', () => {
+    modalBurger.classList.toggle('active');
     menuContent.classList.toggle('active');
 
     compensationScrollWrapper();
