@@ -62,9 +62,9 @@
     top: 0;
     left: 0;
     width: 99%;
-    min-width: 100px;
+    min-width: 501px;
     height: 99%;
-    min-height: 50px;
+    min-height: 501px;
     overflow: hidden;
 }
 
@@ -73,8 +73,8 @@
     top: 0;
     left: 0;
     z-index: 0;
-    min-width: 100px;
-    min-height: 50px;
+    min-width: 501px;
+    min-height: 501px;
     height: 100%;
     -o-object-fit: contain;
     object-fit: contain;
