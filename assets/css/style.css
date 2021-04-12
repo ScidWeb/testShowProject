@@ -107,6 +107,15 @@ button::-moz-focus-inner {
 }
 
 /* variables */
+a {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
 body.overflow-hidden {
     overflow: hidden;
 }
@@ -169,14 +178,14 @@ button {
 
 .wrapper_main {
     height: 100vh;
-    padding-bottom: 7%;
+    padding-bottom: 50px;
     overflow: hidden;
     background-color: #ffffff;
 }
 
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1440px) {
     .wrapper_main {
-        padding-bottom: 25px;
+        padding-bottom: 40px;
     }
 }
 
@@ -209,7 +218,7 @@ button {
 .wrapper__logo {
     position: fixed;
     top: 50%;
-    right: 18px;
+    right: 20px;
     z-index: 1000;
     margin-right: inherit;
     transform: rotate(90deg) translateY(-50%);
@@ -223,20 +232,20 @@ button {
 
 @media all and (max-width: 1440px) {
     .wrapper__logo {
-        right: -3px;
+        right: 0;
     }
 }
 
 @media all and (max-width: 1280px) {
     .wrapper__logo {
         top: 235px;
-        right: 12px;
+        right: 16px;
     }
 }
 
 @media all and (max-width: 960px) {
     .wrapper__logo {
-        right: 2px;
+        right: 6px;
     }
 }
 
@@ -1087,6 +1096,7 @@ button {
 }
 
 .feedback__label {
+    margin-bottom: 3px;
     color: #7a7979;
     font-size: 16px;
     line-height: 1.375;
@@ -1099,6 +1109,7 @@ button {
 
 .feedback__input {
     height: 40px;
+    padding-left: 20px;
     background-color: #ddcebc;
     border: 0;
 }
@@ -1500,7 +1511,7 @@ button {
     width: 100%;
     height: 100%;
     padding: 80px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 @media all and (max-width: 590px) {
@@ -1549,7 +1560,7 @@ button {
 
 .modal-services__text {
     height: 100%;
-    overflow: auto;
+    overflow: visible;
     color: #ffffff;
     font-weight: 400;
     font-size: 18px;

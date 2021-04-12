@@ -6,7 +6,7 @@ function gsapInit() {
       gsap.to(element, {
         scrollTrigger: {
           trigger: element,
-          start: 'top 30%',
+          start: 'top 24%',
           end: 'top 10%',
           scrub: 1,
           // markers: true,
@@ -21,7 +21,7 @@ function gsapInit() {
       gsap.to(element, {
         scrollTrigger: {
           trigger: element,
-          start: 'top 35%',
+          start: 'top 29%',
           end: 'top 16%',
           scrub: 1,
           // markers: true,

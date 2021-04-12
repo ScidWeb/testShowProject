@@ -149,6 +149,7 @@
 }
 
 .feedback__label {
+    margin-bottom: 3px;
     color: #7a7979;
     font-size: 16px;
     line-height: 1.375;
@@ -161,6 +162,7 @@
 
 .feedback__input {
     height: 40px;
+    padding-left: 20px;
     background-color: #ddcebc;
     border: 0;
 }
