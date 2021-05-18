@@ -221,6 +221,12 @@ h2 {
     line-height: 24px;
 }
 
+@media screen and (max-width: 540px) {
+    .card-features__text {
+        text-align: left;
+    }
+}
+
 .card-features__title {
     margin: 0 0 40px;
     font-size: 36px;
