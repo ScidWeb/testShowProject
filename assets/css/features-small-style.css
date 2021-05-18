@@ -161,7 +161,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
     .container-main__card-detail {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
 }
 
@@ -180,14 +180,20 @@ h2 {
 .card-features-small__name {
     margin-bottom: 30px;
     font-weight: 600;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 30px;
+    line-height: 30px;
 }
 
 @media screen and (max-width: 768px) {
     .card-features-small__name {
         width: 100%;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .card-features-small__name {
+        margin-bottom: 22px;
     }
 }
 
@@ -215,6 +221,12 @@ h2 {
     }
 }
 
+@media screen and (max-width: 540px) {
+    .card-features-small__wrapper {
+        margin-bottom: 10px;
+    }
+}
+
 .card-features-small__image {
     width: 130px;
     height: 90px;
@@ -234,6 +246,12 @@ h2 {
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
+}
+
+@media screen and (max-width: 540px) {
+    .card-features-small__title {
+        margin-bottom: 22px;
+    }
 }
 
 .card-features-small__text {

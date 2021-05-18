@@ -161,7 +161,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
     .container-main__card-detail {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
 }
 
@@ -195,7 +195,7 @@ h2 {
 
 @media screen and (max-width: 540px) {
     .card-features h2 {
-        font-size: 28px;
+        font-size: 30px;
         line-height: 36px;
     }
 }
@@ -221,10 +221,22 @@ h2 {
     line-height: 36px;
 }
 
+@media screen and (max-width: 540px) {
+    .card-features__title {
+        margin-bottom: 15px;
+    }
+}
+
 .card-features__description {
     margin-bottom: 50px;
     color: #555555;
     font-size: 16px;
+}
+
+@media screen and (max-width: 540px) {
+    .card-features__description {
+        margin-bottom: 25px;
+    }
 }
 
 .card-features__description p,

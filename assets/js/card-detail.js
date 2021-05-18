@@ -38,6 +38,12 @@ let galleryTop = new Swiper('.swiper-container_card-detail-gallery_top', {
     prevEl: '.swiper-button-prev',
   },
 
+  pagination: {
+    el: '.js-swiper-pagination-card-detail-gallery',
+    bulletClass: 'swiper-pagination-bullet_card-detail-gallery',
+    bulletActiveClass: 'swiper-pagination-bullet-active_card-detail-gallery',
+  },
+
   thumbs: {
     swiper: galleryThumbs,
   },
