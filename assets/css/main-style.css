@@ -352,12 +352,6 @@ h2 {
     line-height: 21.09px;
 }
 
-@media screen and (max-width: 540px) {
-    .container-main {
-        padding: 10px 20px;
-    }
-}
-
 .container-main__card-detail {
     margin-bottom: 90px;
 }

@@ -143,12 +143,6 @@ h2 {
     line-height: 21.09px;
 }
 
-@media screen and (max-width: 540px) {
-    .container-main {
-        padding: 10px 20px;
-    }
-}
-
 .container-main__card-detail {
     margin-bottom: 90px;
 }
@@ -301,5 +295,34 @@ h2 {
     line-height: 1.35;
     text-align: center;
     text-transform: uppercase;
+    background-color: #043e70;
+    border: 0;
+}
+
+.button_services {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: #043e70;
+    font-size: 12px;
+    background-color: #edeaea;
+}
+
+.button_services_active {
+    color: #fff;
+    background-color: #043e70;
+}
+
+.button_services-item {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: #043e70;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: none;
+    background-color: #edeaea;
+}
+
+.button_services-item_active {
+    color: #fff;
     background-color: #043e70;
 }

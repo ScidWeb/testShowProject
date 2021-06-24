@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/libs/selectize/selectize.default.min.css" rel="stylesheet" />
+    <link href="assets/css/services-style.min.css" rel="stylesheet" />
+    
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="./assets/js/services.min.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4213be9b-648d-478a-b5f6-7b8923d0f619" type="text/javascript"></script>
+    <script src="./assets/js/libs/selectize.min.js" defer></script>
+    
+    <title>Services</title>
+  </head>
+  <body>
+    
+    <!-- prettier-ignore -->
+    <div class="container-main">
+        <div class="container-main__services">
+          <div class="services">
+            <section class="services__header"><div class="services-header">
+          <h1 class="services-header__title">Сервисные центры</h1>
+          <div class="services-header__text">
+            <div class="services-header__subtitle">
+              Список СЦ для Биде вы сможете посмотреть
+              <a href="" class="services-header__link">тут</a>
+            </div>
+            <div class="services-header__subtitle">
+              Список СЦ для Моек воздуха вы сможете посмотреть
+              <a href="" class="services-header__link">тут</a>
+            </div>
+          </div>
+          <div class="services-header__search">
+            <!-- <input type="text" class="services-header__input js-header-input" placeholder="Введите город" /> -->
+        
+            <select class="services-header__select js-header-autocomplete">
+              <option value="">Введите город</option>
+            </select>
+        
+            <div class="services-header__buttons">
+              <div class="services-header__button">
+                <button class="button button_services button_services_active js-toggle-map">Карта</button>
+              </div>
+              <div class="services-header__button">
+                <button class="button button_services js-toggle-list">Список</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        
+            <section class="services__map js-show-map"><div class="services-map">
+          <div id="map"></div>
+        </div>
+        </section>
+        
+            <section class="services__list js-show-list" style="display: none"><div class="services-list"></div>
+        </section>
+          </div>
+        </div>
+    </div>
+    
+  </body>
+</html>
