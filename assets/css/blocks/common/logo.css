@@ -1,0 +1,21 @@
+/* variables */
+.logo {
+    color: #000000;
+    font-weight: 700;
+    font-size: 22.5px;
+    font-family: 'Didot', serif;
+    line-height: 1.1;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+@media all and (max-width: 1280px) {
+    .logo {
+        font-size: 16.5px;
+        line-height: 1.125;
+    }
+}
+
+.logo_about {
+    color: #a78460;
+}

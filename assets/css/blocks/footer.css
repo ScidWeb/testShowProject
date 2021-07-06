@@ -1,0 +1,19 @@
+/* variables */
+.footer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.05em;
+}
+
+@media all and (max-width: 590px) {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        font-size: 12px;
+        border-top: 1px solid #000;
+    }
+}
